@@ -8,7 +8,6 @@ module fifo_memory #(
     input wr_en,
     input full,
     input [ADDR_SIZE-1:0] wr_addr,
-    input rd_en,
     input [ADDR_SIZE-1:0] rd_addr,
     input [DATA_SIZE-1:0] wr_data,
     output [DATA_SIZE-1:0] rd_data

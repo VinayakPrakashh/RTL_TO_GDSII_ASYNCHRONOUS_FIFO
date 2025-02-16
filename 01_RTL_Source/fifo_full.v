@@ -14,9 +14,7 @@ reg [ADDR_SIZE:0] wr_addr_bin_r;
 reg full_r;
 
 wire full_n;
-
 wire [ADDR_SIZE:0] wr_addr_grey_next;
-
 wire [ADDR_SIZE:0] wr_addr_binary_next;
 
 always @(posedge wr_clk or posedge wr_rst) begin
@@ -32,14 +30,13 @@ end
 
 assign wr_addr_bin = wr_addr_bin_r[ADDR_SIZE-1:0]; // write pointer
 
-assign wr_addr_binary_next = {wr_addr_bin_r+ (!full_r & wr_en) };
+assign wr_addr_binary_next = {wr_addr_bin_r+(!full_r & wr_en)};
 
 assign wr_addr_grey_next = (wr_addr_binary_next >>1) ^ wr_addr_binary_next;
 
-assign full_n = (wr_addr_grey_next[ADDR_SIZE] == !rd_ptr_addr_sync[ADDR_SIZE])&&  //full condition
-                (wr_addr_grey_next[ADDR_SIZE-1] == !rd_ptr_addr_sync[ADDR_SIZE-1])&&
-                (wr_addr_grey_next[ADDR_SIZE-2:0] == rd_ptr_addr_sync[ADDR_SIZE-2:0]);
-
+assign full_n         = ((wr_addr_grey_next[ADDR_SIZE]     != rd_ptr_addr_sync[ADDR_SIZE] ) &&
+                         (wr_addr_grey_next[ADDR_SIZE-1]   != rd_ptr_addr_sync[ADDR_SIZE-1]) &&
+                         (wr_addr_grey_next[ADDR_SIZE-2:0] == rd_ptr_addr_sync[ADDR_SIZE-2:0]))       ;                   
 always @(posedge wr_clk or posedge wr_rst) begin
     if(wr_rst) begin
         full <= 0;

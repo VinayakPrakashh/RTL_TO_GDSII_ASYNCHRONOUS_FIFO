@@ -29,6 +29,6 @@ fifo_empty #(ADDR_SIZE) e(rd_clk, rd_en, rd_rst_sync, wr_addr_grey_sync, empty, 
 cdc_synchronizer #(ADDR_SIZE) wr_addr_sync(wr_clk, wr_rst_sync, rd_addr_grey, rd_addr_grey_sync);
 cdc_synchronizer #(ADDR_SIZE) rd_addr_sync(rd_clk, rd_rst_sync, wr_addr_grey, wr_addr_grey_sync);
 
-fifo_memory #(ADDR_SIZE, DATA_SIZE, DEPTH) m(wr_clk, wr_rst_sync, wr_en, full, wr_addr, rd_en, rd_addr, wr_data, rd_data);
+fifo_memory #(ADDR_SIZE, DATA_SIZE, DEPTH) m(wr_clk, wr_rst_sync, wr_en, full, wr_addr, rd_addr, wr_data, rd_data);
 
 endmodule
