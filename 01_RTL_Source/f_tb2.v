@@ -1,40 +1,4 @@
 `timescale 1 ns/10 ps
-//-----%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-//-----%% Project Name : Asynchronous FIFO Tesetbench                                                 %%
-//-----%% File Name    : fifo_tb.v                                                                    %%
-//-----%% Author       : CDAC Bangalore                                                               %%
-//     %%                                                                                             %%
-//-----%% Description  : In this testbench module, fifo_tb is designed to verify the functionality of %%
-//-----%%                the asynchronous FIFO module. It defines parameters such as data size        %%
-//-----%%                (DATASIZE), address size (ADDRSIZE), and memory depth (MEM_DEPTH). The       %%
-//-----%%                testbench includes input and output signals necessary for the FIFO module,   %%
-//-----%%                along with a test memory (mem_tb) to simulate the FIFO's behavior.           %%
-//-----%%                The testbench generates write and read clocks (i_wr_clk and i_rd_clk),       %%
-//-----%%                write and read reset signals (i_wr_rst_n and i_rd_rst_n), write data         %%
-//-----%%                (i_wr_data), and control signals for write and read operations (i_wr_en and  %%
-//-----%%                i_rd_en). It also has flags for FIFO full and empty states (o_full and       %%
-//-----%%                o_empty) and the output read data (o_rd_data).                               %%
-//-----%%                The write clock is generated using an initial block. Similar initial blocks  %%
-//-----%%                generate read clocks and initialize write and read reset signals. Random     %%
-//-----%%                data is generated and written to the test memory when the FIFO is not full,  %%
-//-----%%                and the write enable signal is asserted.                                     %%
-//-----%%                The testbench captures the output read data and compares it with the data    %%
-//-----%%                read from the test memory. If the data matches, a success message is         %%
-//-----%%                displayed; otherwise, a failure message is printed. The testbench            %%
-//-----%%                effectively checks the FIFO module's read and write operations and ensures   %%
-//-----%%                proper synchronization between the clock domains while verifying the correct %%
-//-----%%                functioning of the FIFO memory.                                              %%
-//-----%% Copyright    : CDAC Bangalore                                                               %%
-//-----%%                                                                                             %%
-//-----%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-//-----%%%%%%%%%%%%%%%%% Modification / Updation History %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-//-----%%                                                                                             %%
-//-----%% Date: 11-12-23            Version 1.0  Change Description:                                  %%
-//-----%%                                                                                             %%
-//-----%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-
 module fifo_tb()                                                   ;
 parameter DATA_SIZE   = 8                                           ;
 parameter ADDR_SIZE   = 4                                           ;

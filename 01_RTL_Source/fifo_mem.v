@@ -15,12 +15,12 @@ module fifo_memory #(
 
 reg [DATA_SIZE-1:0] mem [DEPTH-1:0]; //memory array
 
-wire wr_en_n;
+wire wr_en_w1;
 
-assign wr_en_n = ~full & wr_en; //write enable signal
+assign wr_en_w1 = ~full & wr_en; //write enable signal
 
-always @(posedge clk or posedge rst) begin
-    if(rst) begin
+always @(posedge clk or negedge rst) begin
+    if(!rst) begin
         mem[0] <= 0;
         mem[1] <= 0;
         mem[2] <= 0;
@@ -38,7 +38,7 @@ always @(posedge clk or posedge rst) begin
         mem[14] <= 0;
         mem[15] <= 0;
     end else begin
-        if(wr_en) begin
+        if(wr_en_w1) begin
             mem[wr_addr] <= wr_data; //synchronous write
         end
     end

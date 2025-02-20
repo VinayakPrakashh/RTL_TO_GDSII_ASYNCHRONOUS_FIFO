@@ -2,7 +2,7 @@
 ## Preset global variables and attributes 
 ############################################################################### 
 set DESIGN fifo_top 
-set GEN_EFF medium 
+set GEN_EFF medium  
 set MAP_OPT_EFF high 
 set clockname read_clk 
 set clockname write_clk 
@@ -46,15 +46,13 @@ read_libs -max_libs {
  ib
 /home/cdac/CHIPINIEP_FEB2024/SCLPDK/scl_pdk/iolib/cio150/synopsys/2002.05/models/tsl18cio1
  50_min.lib} 
-#lib_cell_list gcnfnn1 gcnfnn2 gcnfnn4 gcnfnn7 gcnfnna gcnrnn1 gcnrnn2 gcnrnn4 gcnrnn7 gcnrnna 
-mx08*  
-#set_dont_use  lib_cell_lists [ gcnfnn1 gcnfnn2 gcnfnn4 gcnfnn7 gcnfnna gcnrnn1 gcnrnn2 gcnrnn4 
-gcnrnn7 gcnrnna mx08*]  
+#lib_cell_list gcnfnn1 gcnfnn2 gcnfnn4 gcnfnn7 gcnfnna gcnrnn1 gcnrnn2 gcnrnn4 gcnrnn7 gcnrnna mx08*  
+#set_dont_use  lib_cell_lists [ gcnfnn1 gcnfnn2 gcnfnn4 gcnfnn7 gcnfnna gcnrnn1 gcnrnn2 gcnrnn4 gcnrnn7 gcnrnna mx08*]  
 #################################################################### 
 ## Load Design 
 #################################################################### 
 puts "load RTL" 
-set FILE_LIST  {fifo.v fifo_empty.v fifo_full.v fifo_mem.v sync_ptr_clx.v reset_sync.v} 
+set FILE_LIST  {fifo_top.v} 
 read_hdl $FILE_LIST 
 puts "elobrate design" 
 elaborate $DESIGN 
@@ -64,7 +62,7 @@ check_design -unresolved
 #################################################################### 
 ## Constraints Setup 
 #################################################################### 
-read_sdc ./Constraints/FIFO_Constraints.sdc 
+read_sdc ./Constraints/fifo_Constraints.sdc 
 path_adjust -from [all_inputs] -to [all_outputs] -delay -1300 -name PA_I2O  
 path_adjust -from [all_inputs] -to [all_register] -delay -1500 -name PA_I2C 
 path_adjust -from [all_register] -to [all_outputs] -delay -1500 -name PA_C2O 

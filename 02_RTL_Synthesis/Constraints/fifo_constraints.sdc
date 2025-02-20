@@ -23,14 +23,14 @@ set MIN_PORT 1;
 set MAX_PORT 2.5;
 
 ####### CLOCK CONSTRAINTS ######### 
-create_clock -name "$WRITE_CLOCK_NAME"           \
-                -period "$WRITE_CLOCK_PERIOD"    \ 
+create_clock -name "$WRITE_CLOCK_NAME" \
+                -period "$WRITE_CLOCK_PERIOD" \ 
                 -waveform "0 [expr $WRITE_CLOCK_PERIOD/2]" \
                 [get_ports "wr_clk_pad"] 
 
-create_clock -name "$READ_CLOCK_NAME"          \
-                -period "$READ_CLOCK_PERIOD"   
-                -waveform "0 [expr $READ_CLOCK_PERIOD/2]"  \ 
+create_clock -name "$READ_CLOCK_NAME" \
+                -period "$READ_CLOCK_PERIOD" \
+                -waveform "0 [expr $READ_CLOCK_PERIOD/2]" \ 
                 [get_ports "rd_clk_pad"] 
 
 ## Virtual Clock Constraints  
@@ -57,7 +57,7 @@ set_clock_transition    -rise   -max  $READ_MAXRISE   [get_clock read_clk]
 set_clock_transition    -fall   -min  $READ_MINRISE   [get_clock read_clk] 
 set_clock_transition    -fall   -max  $READ_MAXRISE   [get_clock read_clk]
 # Input transition 
-set_input_transition 	-max 	$MAX_PORT  	[get_ports 	wr_data_pad[7]] 
+set_input_transition 	-max 	$MAX_PORT  	[get_ports 	wr_data_pad[7]] Find. Hey Cortana verification folder. OK. Hey, Cortana, set at the school party. Me in the evening shell. Hey, Cortana. Play. Music. Hey, Cortana. Hey, Cortana. Open. India, India A search for the SCLPDK, .com, Hotel and Runner. Hey, Cortana. HDL search for. Folder. Inside. Hey, Cortana. Understood, it should be more. Hey, Cortana. Hey Cortana folders and I feel so soon, that's. Hey, Cortana, don't mean the current direct. Call. Dot library in. City of Zero1. SS connect. Here it is written as. Hey, Cortana. Hey, Cortana. Hey, Cortana. What is? Length 5. What is that? Hey Cortana, time for a technology calendar physical designer. Play. Play. 
 set_input_transition 	-max 	$MAX_PORT  	[get_ports 	wr_data_pad[6]] 
 set_input_transition 	-max 	$MAX_PORT  	[get_ports 	wr_data_pad[5]] 
 set_input_transition 	-max 	$MAX_PORT  	[get_ports 	wr_data_pad[4]] 
@@ -159,17 +159,3 @@ group_path -name   I2R   -from   [all_inputs]      -to   [all_registers]
 group_path -name   R2O   -from   [all_registers]   -to   [all_outputs] 
 group_path -name   R2R   -from   [all_registers]   -to   [all_registers] 
 group_path -name   I2O   -from   [all_inputs]      -to   [all_outputs] 
-
-
-
-
-    input wr_clk_pad,
-    input rd_clk_pad,
-    input wr_en_pad,
-    input rd_en_pad,
-    input wr_rst_pad,
-    input rd_rst_pad,
-    input [DATA_SIZE-1:0] wr_data_pad,
-    output [DATA_SIZE-1:0] rd_data_pad,
-    output  empty_pad,
-    output  full_pad

@@ -111,7 +111,7 @@ always @(posedge clk or posedge rst) begin
         mem[14] <= 0;
         mem[15] <= 0;
     end else begin
-        if(wr_en) begin
+        if(wr_en_n  ) begin
             mem[wr_addr] <= wr_data; //synchronous write
         end
     end

@@ -7,8 +7,8 @@ module dff #(
     output reg [ADDR_SIZE:0] rd_data
 );
 
-always @(posedge clk or posedge rst) begin
-    if(rst) begin
+always @(posedge clk or negedge rst) begin
+    if(!rst) begin
         rd_data <= 0;
     end else begin
         rd_data <= wr_data;

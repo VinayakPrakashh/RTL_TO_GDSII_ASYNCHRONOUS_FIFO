@@ -6,13 +6,13 @@ module reset_sync(
 
 reg rst_sync_reg;
 
-always @(posedge clk or posedge rst) begin
-    if(rst) begin
-        rst_sync_reg <= 1'b1;
-        rst_sync <= 1'b1;
+always @(posedge clk or negedge rst) begin
+    if(!rst) begin
+        rst_sync_reg <= 1'b0;
+        rst_sync <= 1'b0;
 
     end else begin
-        rst_sync_reg <= 1'b0;
+        rst_sync_reg <= 1'b1;
         rst_sync <= rst_sync_reg;
     end
 end

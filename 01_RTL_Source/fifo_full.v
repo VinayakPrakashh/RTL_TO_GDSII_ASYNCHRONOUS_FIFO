@@ -17,8 +17,8 @@ wire full_n;
 wire [ADDR_SIZE:0] wr_addr_grey_next;
 wire [ADDR_SIZE:0] wr_addr_binary_next;
 
-always @(posedge wr_clk or posedge wr_rst) begin
-    if(wr_rst) begin
+always @(posedge wr_clk or negedge wr_rst) begin
+    if(!wr_rst) begin
         wr_addr_bin_r <= 0;
         wr_addr_grey <= 0;
     end
@@ -37,17 +37,17 @@ assign wr_addr_grey_next = (wr_addr_binary_next >>1) ^ wr_addr_binary_next;
 assign full_n         = ((wr_addr_grey_next[ADDR_SIZE]     != rd_ptr_addr_sync[ADDR_SIZE] ) &&
                          (wr_addr_grey_next[ADDR_SIZE-1]   != rd_ptr_addr_sync[ADDR_SIZE-1]) &&
                          (wr_addr_grey_next[ADDR_SIZE-2:0] == rd_ptr_addr_sync[ADDR_SIZE-2:0]))       ;                   
-always @(posedge wr_clk or posedge wr_rst) begin
-    if(wr_rst) begin
-        full <= 0;
+always @(posedge wr_clk or negedge wr_rst) begin
+    if(!wr_rst) begin
+        full <= 1'b0;
     end
     else begin
         full <= full_n;
     end
 end
-always @(posedge wr_clk or posedge wr_rst) begin
-    if (wr_rst) begin
-        full_r <= 0;
+always @(posedge wr_clk or negedge wr_rst) begin
+    if (!wr_rst) begin
+        full_r <= 1'b0;
     end
     else begin
         full_r <= full_n;
