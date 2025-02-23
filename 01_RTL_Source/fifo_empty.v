@@ -1,25 +1,23 @@
-module fifo_empty #(
-    ADDR_SIZE = 4
-) (
+module fifo_empty  (
     input rd_clk,
     input rd_en,
     input rd_rst,
-    input [ADDR_SIZE:0] wr_ptr_addr_sync,
+    input [4:0] wr_ptr_addr_sync,
     output reg empty,
-    output reg [ADDR_SIZE:0] rd_addr_grey,
-    output  [ADDR_SIZE-1:0] rd_addr_bin
+    output reg [4:0] rd_addr_grey,
+    output  [3:0] rd_addr_bin
 );
     
-reg [ADDR_SIZE:0] rd_addr_bin_r;
+reg [4:0] rd_addr_bin_r;
 reg empty_r;
 
 wire empty_n;
-wire [ADDR_SIZE:0] rd_addr_grey_next, rd_addr_bin_next;
+wire [4:0] rd_addr_grey_next, rd_addr_bin_next;
 
 always @(posedge rd_clk or negedge rd_rst) begin
     if(!rd_rst) begin
-        rd_addr_bin_r <= 0;
-        rd_addr_grey <= 0;
+        rd_addr_bin_r <= 5'b0;
+        rd_addr_grey <= 5'b0;
     end
     else begin
         rd_addr_bin_r <= rd_addr_bin_next;
@@ -27,7 +25,7 @@ always @(posedge rd_clk or negedge rd_rst) begin
     end
 end
 
-assign rd_addr_bin = rd_addr_bin_r[ADDR_SIZE-1:0]; // read pointer
+assign rd_addr_bin = rd_addr_bin_r[3:0]; // read pointer
 
 assign rd_addr_bin_next = {rd_addr_bin_r+(!empty_r & rd_en)};
 

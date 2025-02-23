@@ -1,42 +1,38 @@
-module fifo_memory #(
-    ADDR_SIZE = 4,
-    DATA_SIZE = 8,
-    DEPTH = 16
-) (
+module fifo_memory (
     input clk,
     input rst,
     input wr_en,
     input full,
-    input [ADDR_SIZE-1:0] wr_addr,
-    input [ADDR_SIZE-1:0] rd_addr,
-    input [DATA_SIZE-1:0] wr_data,
-    output [DATA_SIZE-1:0] rd_data
+    input [3:0] wr_addr,
+    input [3:0] rd_addr,
+    input [7:0] wr_data,
+    output [7:0] rd_data
 );
 
-reg [DATA_SIZE-1:0] mem [DEPTH-1:0]; //memory array
+reg [7:0] mem [15:0]; //memory array
 
 wire wr_en_w1;
 
-assign wr_en_w1 = ~full & wr_en; //write enable signal
+assign wr_en_w1 = (!full & wr_en); //write enable signal
 
 always @(posedge clk or negedge rst) begin
     if(!rst) begin
-        mem[0] <= 0;
-        mem[1] <= 0;
-        mem[2] <= 0;
-        mem[3] <= 0;
-        mem[4] <= 0;
-        mem[5] <= 0;
-        mem[6] <= 0;
-        mem[7] <= 0;
-        mem[8] <= 0;
-        mem[9] <= 0;
-        mem[10] <= 0;
-        mem[11] <= 0;
-        mem[12] <= 0;
-        mem[13] <= 0;
-        mem[14] <= 0;
-        mem[15] <= 0;
+        mem[0] <= 8'b0;
+        mem[1] <= 8'b0;
+        mem[2] <= 8'b0;
+        mem[3] <= 8'b0;
+        mem[4] <= 8'b0;
+        mem[5] <= 8'b0;
+        mem[6] <= 8'b0;
+        mem[7] <= 8'b0;
+        mem[8] <= 8'b0;
+        mem[9] <= 8'b0;
+        mem[10] <= 8'b0;
+        mem[11] <= 8'b0;
+        mem[12] <= 8'b0;
+        mem[13] <= 8'b0;
+        mem[14] <= 8'b0;
+        mem[15] <= 8'b0;
     end else begin
         if(wr_en_w1) begin
             mem[wr_addr] <= wr_data; //synchronous write
