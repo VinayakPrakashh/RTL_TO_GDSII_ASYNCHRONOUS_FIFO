@@ -1,4 +1,4 @@
-`timescale 1 ns/10 ps
+`timescale 1ns/1ps
 //-----%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 //-----%% Project Name : Asynchronous FIFO Tesetbench                                                 %%
 //-----%% File Name    : fifo_tb.v                                                                    %%
@@ -193,8 +193,7 @@ begin
 end
 
 // Read Enable Generation logic
-assign i_rd_en = ( rd_entmp & (!o_empty) )                         ;
-
+assign i_rd_en = ( rd_entmp & (!o_empty) )    ;
 //************************************************************************************************************
 // Enables the FIFO read operation and getting the read enable temporary signal based on read reset and empty flag
 //***********************************************************************************************************

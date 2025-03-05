@@ -1,3 +1,4 @@
+`timescale 1ns/1ps
 module cdc_synchronizer(
     input clk,
     input rst,
