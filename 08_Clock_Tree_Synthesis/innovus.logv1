@@ -1,0 +1,290 @@
+[02/27 20:41:11      0s] 
+[02/27 20:41:11      0s] Cadence Innovus(TM) Implementation System.
+[02/27 20:41:11      0s] Copyright 2021 Cadence Design Systems, Inc. All rights reserved worldwide.
+[02/27 20:41:11      0s] 
+[02/27 20:41:11      0s] Version:	v21.18-s099_1, built Tue Jul 18 13:03:50 PDT 2023
+[02/27 20:41:11      0s] Options:	
+[02/27 20:41:11      0s] Date:		Thu Feb 27 20:41:11 2025
+[02/27 20:41:11      0s] Host:		c2slab.cet.ac.in (x86_64 w/Linux 4.18.0-513.24.1.el8_9.x86_64) (4cores*8cpus*Intel(R) Xeon(R) CPU E5-1620 v3 @ 3.50GHz 10240KB)
+[02/27 20:41:11      0s] OS:		Red Hat Enterprise Linux 8.9 (Ootpa)
+[02/27 20:41:11      0s] 
+[02/27 20:41:11      0s] License:
+[02/27 20:41:11      0s] 		[20:41:11.275785] Configured Lic search path (21.01-s002): 5280@14.139.1.126
+
+[02/27 20:41:13      0s] 		invs	Innovus Implementation System	21.1	checkout succeeded
+[02/27 20:41:13      0s] 		8 CPU jobs allowed with the current license(s). Use setMultiCpuUsage to set your required CPU count.
+[02/27 20:41:26     12s] Reset Parastics called with the command setExtractRCMode -reset@(#)CDS: Innovus v21.18-s099_1 (64bit) 07/18/2023 13:03 (Linux 3.10.0-693.el7.x86_64)
+[02/27 20:41:28     14s] @(#)CDS: NanoRoute 21.18-s099_1 NR230707-1955/21_18-UB (database version 18.20.605) {superthreading v2.17}
+[02/27 20:41:28     14s] @(#)CDS: AAE 21.18-s017 (64bit) 07/18/2023 (Linux 3.10.0-693.el7.x86_64)
+[02/27 20:41:28     14s] @(#)CDS: CTE 21.18-s022_1 () Jul 11 2023 23:10:24 ( )
+[02/27 20:41:28     14s] @(#)CDS: SYNTECH 21.18-s010_1 () Jul  5 2023 06:32:03 ( )
+[02/27 20:41:28     14s] @(#)CDS: CPE v21.18-s053
+[02/27 20:41:28     14s] @(#)CDS: IQuantus/TQuantus 21.1.1-s966 (64bit) Wed Mar 8 10:22:20 PST 2023 (Linux 3.10.0-693.el7.x86_64)
+[02/27 20:41:28     14s] @(#)CDS: OA 22.60-p087 Thu Feb  9 09:35:26 2023
+[02/27 20:41:28     14s] @(#)CDS: SGN 20.10-d001 (01-Jun-2020) (64 bit executable, Qt5.9.0)
+[02/27 20:41:28     14s] @(#)CDS: RCDB 11.15.0
+[02/27 20:41:28     14s] @(#)CDS: STYLUS 21.12-s019_1 (12/20/2022 05:13 PST)
+[02/27 20:41:28     14s] @(#)CDS: SystemPlanner-21.18-10439 (21.18) (2023-03-01 15:40:03+0800)
+[02/27 20:41:28     14s] Create and set the environment variable TMPDIR to /tmp/innovus_temp_739084_c2slab.cet.ac.in_user1_yacowz.
+
+[02/27 20:41:28     14s] Change the soft stacksize limit to 0.2%RAM (63 mbytes). Set global soft_stack_size_limit to change the value.
+[02/27 20:41:30     16s] 
+[02/27 20:41:30     16s] **INFO:  MMMC transition support version v31-84 
+[02/27 20:41:30     16s] 
+[02/27 20:41:30     16s] <CMD> set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+[02/27 20:41:30     16s] <CMD> suppressMessage ENCEXT-2799
+[02/27 20:41:30     16s] <CMD> win
+[02/27 20:41:41     17s] <CMD> encMessage warning 0
+[02/27 20:41:41     17s] Suppress "**WARN ..." messages.
+[02/27 20:41:41     17s] <CMD> encMessage debug 0
+[02/27 20:41:41     17s] <CMD> is_common_ui_mode
+[02/27 20:41:41     17s] <CMD> restoreDesign /run/media/user1/c2s/S5_training_batch2/Vinayak3/08_Clock_Tree_Synthesis/fifo_place.enc.dat fifo
+[02/27 20:41:41     17s] #% Begin load design ... (date=02/27 20:41:41, mem=1020.1M)
+[02/27 20:41:41     17s] Set Default Input Pin Transition as 0.1 ps.
+[02/27 20:41:41     18s] Loading design 'fifo' saved by 'Innovus' '20.14-s095_1' on 'Tue Feb 6 18:17:12 2024'.
+[02/27 20:41:41     18s] **ERROR: (IMPIMEX-7023):	The file /run/media/user1/c2s/S5_training_batch2/Vinayak3/08_Clock_Tree_Synthesis/fifo_place.enc.dat/libs/lef/tsl180l4.lef inside the saved design directory was deleted. This is dangerous and can cause unexpected problems and crashes when reading the design or inside commands later in the flow. If you are just experimenting and/or debugging and accept the risks, you can set the Tcl global restore_db_file_check to 0 and try again.
+**ERROR: (IMPIMEX-7023):	The file /run/media/user1/c2s/S5_training_batch2/Vinayak3/08_Clock_Tree_Synthesis/fifo_place.enc.dat/libs/lef/tsl18fs120_scl.lef inside the saved design directory was deleted. This is dangerous and can cause unexpected problems and crashes when reading the design or inside commands later in the flow. If you are just experimenting and/or debugging and accept the risks, you can set the Tcl global restore_db_file_check to 0 and try again.
+**ERROR: (IMPIMEX-7023):	The file /run/media/user1/c2s/S5_training_batch2/Vinayak3/08_Clock_Tree_Synthesis/fifo_place.enc.dat/libs/lef/tsl18cio150_4lm.lef inside the saved design directory was deleted. This is dangerous and can cause unexpected problems and crashes when reading the design or inside commands later in the flow. If you are just experimenting and/or debugging and accept the risks, you can set the Tcl global restore_db_file_check to 0 and try again.
+
+[02/27 20:41:41     18s] 
+[02/27 20:41:41     18s] ERROR: 
+[02/27 20:41:41     18s] 
+[02/27 20:41:41     18s] 
+[02/27 20:41:41     18s]     while executing
+[02/27 20:41:41     18s] "error $catchMsg"
+[02/27 20:41:41     18s]     (procedure "restoreDesign" line 33)
+[02/27 20:41:41     18s] 
+[02/27 20:41:41     18s] <CMD> encMessage warning 1
+[02/27 20:41:41     18s] Un-suppress "**WARN ..." messages.
+[02/27 20:41:41     18s] <CMD> encMessage debug 0
+[02/27 20:44:31     32s] <CMD> encMessage warning 0
+[02/27 20:44:31     32s] Suppress "**WARN ..." messages.
+[02/27 20:44:31     32s] <CMD> encMessage debug 0
+[02/27 20:44:31     32s] <CMD> is_common_ui_mode
+[02/27 20:44:31     32s] <CMD> restoreDesign /run/media/user1/c2s/S5_training_batch2/Vinayak3/08_Clock_Tree_Synthesis/Placement/fifo_place.enc.dat fifo
+[02/27 20:44:31     32s] report_message: '-start_cmd/-end_cmd' can not be nested. Interior calls do nothing. Ignore.
+[02/27 20:44:31     32s] % Begin load design ... (date=02/27 20:44:31, mem=1021.8M)
+[02/27 20:44:31     32s] Set Default Input Pin Transition as 0.1 ps.
+[02/27 20:44:31     32s] Loading design 'fifo' saved by 'Innovus' '20.14-s095_1' on 'Tue Feb 6 18:17:12 2024'.
+[02/27 20:44:31     32s] **ERROR: (IMPIMEX-7023):	The file /run/media/user1/c2s/S5_training_batch2/Vinayak3/08_Clock_Tree_Synthesis/Placement/fifo_place.enc.dat/libs/lef/tsl180l4.lef inside the saved design directory was deleted. This is dangerous and can cause unexpected problems and crashes when reading the design or inside commands later in the flow. If you are just experimenting and/or debugging and accept the risks, you can set the Tcl global restore_db_file_check to 0 and try again.
+**ERROR: (IMPIMEX-7023):	The file /run/media/user1/c2s/S5_training_batch2/Vinayak3/08_Clock_Tree_Synthesis/Placement/fifo_place.enc.dat/libs/lef/tsl18fs120_scl.lef inside the saved design directory was deleted. This is dangerous and can cause unexpected problems and crashes when reading the design or inside commands later in the flow. If you are just experimenting and/or debugging and accept the risks, you can set the Tcl global restore_db_file_check to 0 and try again.
+**ERROR: (IMPIMEX-7023):	The file /run/media/user1/c2s/S5_training_batch2/Vinayak3/08_Clock_Tree_Synthesis/Placement/fifo_place.enc.dat/libs/lef/tsl18cio150_4lm.lef inside the saved design directory was deleted. This is dangerous and can cause unexpected problems and crashes when reading the design or inside commands later in the flow. If you are just experimenting and/or debugging and accept the risks, you can set the Tcl global restore_db_file_check to 0 and try again.
+
+[02/27 20:44:31     32s] 
+[02/27 20:44:31     32s] ERROR: 
+[02/27 20:44:31     32s] 
+[02/27 20:44:31     32s] 
+[02/27 20:44:31     32s]     while executing
+[02/27 20:44:31     32s] "error $catchMsg"
+[02/27 20:44:31     32s]     (procedure "restoreDesign" line 33)
+[02/27 20:44:31     32s] 
+[02/27 20:44:31     32s] <CMD> encMessage warning 1
+[02/27 20:44:31     32s] Un-suppress "**WARN ..." messages.
+[02/27 20:44:31     32s] <CMD> encMessage debug 0
+[02/27 20:55:50    105s] <CMD> encMessage warning 0
+[02/27 20:55:50    105s] Suppress "**WARN ..." messages.
+[02/27 20:55:50    105s] <CMD> encMessage debug 0
+[02/27 20:55:50    105s] <CMD> is_common_ui_mode
+[02/27 20:55:50    105s] <CMD> restoreDesign /run/media/user1/c2s/S5_training_batch2/Vinayak3/07_Placement/Placement/fifo_top_placed.enc.dat fifo_top
+[02/27 20:55:50    105s] report_message: '-start_cmd/-end_cmd' can not be nested. Interior calls do nothing. Ignore.
+[02/27 20:55:50    105s] % Begin load design ... (date=02/27 20:55:50, mem=1062.9M)
+[02/27 20:55:50    105s] **ERROR: (IMPIMEX-4018):	Side file 'user.attrdef' is not saved by saveDesign, restoreDesign loads db without this file.
+[02/27 20:55:50    105s] **ERROR: (IMPIMEX-4018):	Side file 'fifo_top.globals' is not saved by saveDesign, restoreDesign loads db without this file.
+[02/27 20:55:50    105s] Loading design 'fifo_top' saved by 'Innovus' '21.18-s099_1' on 'Thu Feb 27 20:21:49 2025'.
+[02/27 20:55:50    105s] % Begin Load MMMC data ... (date=02/27 20:55:50, mem=1059.8M)
+[02/27 20:55:50    105s] % End Load MMMC data ... (date=02/27 20:55:50, total cpu=0:00:00.0, real=0:00:00.0, peak res=1060.0M, current mem=1060.0M)
+[02/27 20:55:50    105s] **ERROR: (IMPSYT-16038):	The specified file '/run/media/user1/c2s/S5_training_batch2/Vinayak3/08_Clock_Tree_Synthesis/Placement/fifo_place.enc.dat/libs/lef/tsl180l4.lef' could not be found. Check your file system, correct the file name.
+[02/27 20:55:50    105s] **ERROR: (IMPSYT-16038):	The specified file '/run/media/user1/c2s/S5_training_batch2/Vinayak3/08_Clock_Tree_Synthesis/Placement/fifo_place.enc.dat/libs/lef/tsl18fs120_scl.lef' could not be found. Check your file system, correct the file name.
+[02/27 20:55:50    105s] **ERROR: (IMPSYT-16038):	The specified file '/run/media/user1/c2s/S5_training_batch2/Vinayak3/08_Clock_Tree_Synthesis/Placement/fifo_place.enc.dat/libs/lef/tsl18cio150_4lm.lef' could not be found. Check your file system, correct the file name.
+[02/27 20:55:50    105s] **ERROR: (IMPIMEX-7327):	The file '/run/media/user1/c2s/S5_training_batch2/Vinayak3/08_Clock_Tree_Synthesis/Placement/fifo_place.enc.dat/libs/lef/tsl180l4.lef /run/media/user1/c2s/S5_training_batch2/Vinayak3/08_Clock_Tree_Synthesis/Placement/fifo_place.enc.dat/libs/lef/tsl18fs120_scl.lef /run/media/user1/c2s/S5_training_batch2/Vinayak3/08_Clock_Tree_Synthesis/Placement/fifo_place.enc.dat/libs/lef/tsl18cio150_4lm.lef' from the init_lef_file variable does not exist or does not have read permissions, so it can't be loaded. If the missing file has LEF data needed by the netlist, a fatal error may occur later when reading the netlist. You should correct the filename to avoid this warning message. 
+[02/27 20:55:50    105s] Note, the setImportMode -treatUndefinedCellAsBbox option controls if an undefined modules is treated as a black-boxes, and setCheckMode -tapeOut controls if an undefined module (not converted to a blackbox) is treated as a fatal error or empty module when reading the netlist.
+[02/27 20:55:50    105s] 
+[02/27 20:55:50    105s] 
+[02/27 20:55:50    105s] ERROR: 
+[02/27 20:55:50    105s] 
+[02/27 20:55:50    105s] 
+[02/27 20:55:50    105s]     while executing
+[02/27 20:55:50    105s] "error $catchMsg"
+[02/27 20:55:50    105s]     (procedure "restoreDesign" line 33)
+[02/27 20:55:50    105s] 
+[02/27 20:55:50    105s] <CMD> encMessage warning 1
+[02/27 20:55:50    105s] Un-suppress "**WARN ..." messages.
+[02/27 20:55:50    105s] <CMD> encMessage debug 0
+[02/27 20:56:04    107s] <CMD> encMessage warning 0
+[02/27 20:56:04    107s] Suppress "**WARN ..." messages.
+[02/27 20:56:04    107s] <CMD> encMessage debug 0
+[02/27 20:56:04    107s] <CMD> is_common_ui_mode
+[02/27 20:56:04    107s] <CMD> restoreDesign /run/media/user1/c2s/S5_training_batch2/Vinayak3/07_Placement/Placement/fifo_top_placed.enc.dat fifo_top
+[02/27 20:56:04    107s] report_message: '-start_cmd/-end_cmd' can not be nested. Interior calls do nothing. Ignore.
+[02/27 20:56:04    107s] % Begin load design ... (date=02/27 20:56:04, mem=1059.5M)
+[02/27 20:56:05    107s] Set Default Input Pin Transition as 0.1 ps.
+[02/27 20:56:05    108s] Loading design 'fifo_top' saved by 'Innovus' '21.18-s099_1' on 'Thu Feb 27 20:21:49 2025'.
+[02/27 20:56:05    108s] % Begin Load MMMC data ... (date=02/27 20:56:05, mem=1060.5M)
+[02/27 20:56:05    108s] Extraction setup Delayed 
+[02/27 20:56:05    108s] Extraction setup Delayed 
+[02/27 20:56:05    108s] Extraction setup Delayed 
+[02/27 20:56:05    108s] Extraction setup Delayed 
+[02/27 20:56:05    108s] The existing analysis_view 'worst' has been replaced with new attributes.
+[02/27 20:56:05    108s] The existing analysis_view 'best' has been replaced with new attributes.
+[02/27 20:56:05    108s] INFO: New setup and hold views overwrite old settings during design initialization
+[02/27 20:56:05    108s] % End Load MMMC data ... (date=02/27 20:56:05, total cpu=0:00:00.0, real=0:00:00.0, peak res=1061.0M, current mem=1061.0M)
+[02/27 20:56:05    108s] 
+[02/27 20:56:05    108s] Loading LEF file /run/media/user1/c2s/S5_training_batch2/Vinayak3/07_Placement/Placement/fifo_top_placed.enc.dat/libs/lef/tsl180l4.lef ...
+[02/27 20:56:05    108s] 
+[02/27 20:56:05    108s] Loading LEF file /run/media/user1/c2s/S5_training_batch2/Vinayak3/07_Placement/Placement/fifo_top_placed.enc.dat/libs/lef/tsl18fs120_scl.lef ...
+[02/27 20:56:05    108s] Set DBUPerIGU to M2 pitch 560.
+[02/27 20:56:05    108s] 
+[02/27 20:56:05    108s] Loading LEF file /run/media/user1/c2s/S5_training_batch2/Vinayak3/07_Placement/Placement/fifo_top_placed.enc.dat/libs/lef/tsl18cio150_4lm.lef ...
+[02/27 20:56:05    108s] **WARN: (IMPLF-200):	Pin 'PAD' in macro 'apc3d01' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[02/27 20:56:05    108s] Type 'man IMPLF-200' for more detail.
+[02/27 20:56:05    108s] **WARN: (IMPLF-200):	Pin 'PAD' in macro 'pc3b01' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[02/27 20:56:05    108s] Type 'man IMPLF-200' for more detail.
+[02/27 20:56:05    108s] **WARN: (IMPLF-200):	Pin 'PAD' in macro 'pc3b01d' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[02/27 20:56:05    108s] Type 'man IMPLF-200' for more detail.
+[02/27 20:56:05    108s] **WARN: (IMPLF-200):	Pin 'PAD' in macro 'pc3b01u' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[02/27 20:56:05    108s] Type 'man IMPLF-200' for more detail.
+[02/27 20:56:05    108s] **WARN: (IMPLF-200):	Pin 'PAD' in macro 'pc3b02' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[02/27 20:56:05    108s] Type 'man IMPLF-200' for more detail.
+[02/27 20:56:05    108s] **WARN: (IMPLF-200):	Pin 'PAD' in macro 'pc3b02d' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[02/27 20:56:05    108s] Type 'man IMPLF-200' for more detail.
+[02/27 20:56:05    108s] **WARN: (IMPLF-200):	Pin 'PAD' in macro 'pc3b02u' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[02/27 20:56:05    108s] Type 'man IMPLF-200' for more detail.
+[02/27 20:56:05    108s] **WARN: (IMPLF-200):	Pin 'PAD' in macro 'pc3b03' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[02/27 20:56:05    108s] Type 'man IMPLF-200' for more detail.
+[02/27 20:56:05    108s] **WARN: (IMPLF-200):	Pin 'PAD' in macro 'pc3b03d' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[02/27 20:56:05    108s] Type 'man IMPLF-200' for more detail.
+[02/27 20:56:05    108s] **WARN: (IMPLF-200):	Pin 'PAD' in macro 'pc3b03ed' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[02/27 20:56:05    108s] Type 'man IMPLF-200' for more detail.
+[02/27 20:56:05    108s] **WARN: (IMPLF-200):	Pin 'PAD' in macro 'pc3b03u' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[02/27 20:56:05    108s] Type 'man IMPLF-200' for more detail.
+[02/27 20:56:05    108s] **WARN: (IMPLF-200):	Pin 'PAD' in macro 'pc3b04' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[02/27 20:56:05    108s] Type 'man IMPLF-200' for more detail.
+[02/27 20:56:05    108s] **WARN: (IMPLF-200):	Pin 'PAD' in macro 'pc3b04d' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[02/27 20:56:05    108s] Type 'man IMPLF-200' for more detail.
+[02/27 20:56:05    108s] **WARN: (IMPLF-200):	Pin 'PAD' in macro 'pc3b04u' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[02/27 20:56:05    108s] Type 'man IMPLF-200' for more detail.
+[02/27 20:56:05    108s] **WARN: (IMPLF-200):	Pin 'PAD' in macro 'pc3b05' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[02/27 20:56:05    108s] Type 'man IMPLF-200' for more detail.
+[02/27 20:56:05    108s] **WARN: (IMPLF-200):	Pin 'PAD' in macro 'pc3b05d' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[02/27 20:56:05    108s] Type 'man IMPLF-200' for more detail.
+[02/27 20:56:05    108s] **WARN: (IMPLF-200):	Pin 'PAD' in macro 'pc3b05u' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[02/27 20:56:05    108s] Type 'man IMPLF-200' for more detail.
+[02/27 20:56:05    108s] **WARN: (IMPLF-200):	Pin 'PAD' in macro 'pc3b21eu' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[02/27 20:56:05    108s] Type 'man IMPLF-200' for more detail.
+[02/27 20:56:05    108s] **WARN: (IMPLF-200):	Pin 'PAD' in macro 'pc3b25eu' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[02/27 20:56:05    108s] Type 'man IMPLF-200' for more detail.
+[02/27 20:56:05    108s] **WARN: (IMPLF-200):	Pin 'PAD' in macro 'pc3d00' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[02/27 20:56:05    108s] Type 'man IMPLF-200' for more detail.
+[02/27 20:56:05    108s] **WARN: (EMS-27):	Message (IMPLF-200) has exceeded the current message display limit of 20.
+[02/27 20:56:05    108s] To increase the message display limit, refer to the product command reference manual.
+[02/27 20:56:05    108s] 
+##  Check design process and node:  
+##  Both design process and tech node are not set.
+
+[02/27 20:56:05    108s] Loading view definition file from /run/media/user1/c2s/S5_training_batch2/Vinayak3/07_Placement/Placement/fifo_top_placed.enc.dat/viewDefinition.tcl
+[02/27 20:56:05    108s] Reading max_timing timing library '/run/media/user1/c2s/cadence/install/SCLPDK/scl_pdk/stdlib/fs120/liberty/lib_flow_ss/tsl18fs120_scl_ss.lib' ...
+[02/27 20:56:05    108s] Both ff/latch and statetable are present in cell 'lanht4'. Only ff/latch will be used to model sequential cell behavior and statetable will be ignored (File /run/media/user1/c2s/cadence/install/SCLPDK/scl_pdk/stdlib/fs120/liberty/lib_flow_ss/tsl18fs120_scl_ss.lib, Line 104953)
+[02/27 20:56:05    108s] Both ff/latch and statetable are present in cell 'lanht2'. Only ff/latch will be used to model sequential cell behavior and statetable will be ignored (File /run/media/user1/c2s/cadence/install/SCLPDK/scl_pdk/stdlib/fs120/liberty/lib_flow_ss/tsl18fs120_scl_ss.lib, Line 157476)
+[02/27 20:56:06    108s] Both ff/latch and statetable are present in cell 'lanht1'. Only ff/latch will be used to model sequential cell behavior and statetable will be ignored (File /run/media/user1/c2s/cadence/install/SCLPDK/scl_pdk/stdlib/fs120/liberty/lib_flow_ss/tsl18fs120_scl_ss.lib, Line 288762)
+[02/27 20:56:06    108s] Read 534 cells in library 'tsl18fs120_scl_ss' 
+[02/27 20:56:06    108s] Reading max_timing timing library '/run/media/user1/c2s/cadence/install/SCLPDK/scl_pdk/iolib/cio150/synopsys/2002.05/models/tsl18cio150_max.lib' ...
+[02/27 20:56:06    109s] Read 93 cells in library 'tsl18cio150_max' 
+[02/27 20:56:06    109s] Reading min_timing timing library '/run/media/user1/c2s/cadence/install/SCLPDK/scl_pdk/stdlib/fs120/liberty/lib_flow_ff/tsl18fs120_scl_ff.lib' ...
+[02/27 20:56:06    109s] Both ff/latch and statetable are present in cell 'lanht4'. Only ff/latch will be used to model sequential cell behavior and statetable will be ignored (File /run/media/user1/c2s/cadence/install/SCLPDK/scl_pdk/stdlib/fs120/liberty/lib_flow_ff/tsl18fs120_scl_ff.lib, Line 104965)
+[02/27 20:56:06    109s] Both ff/latch and statetable are present in cell 'lanht2'. Only ff/latch will be used to model sequential cell behavior and statetable will be ignored (File /run/media/user1/c2s/cadence/install/SCLPDK/scl_pdk/stdlib/fs120/liberty/lib_flow_ff/tsl18fs120_scl_ff.lib, Line 157496)
+[02/27 20:56:06    109s] Both ff/latch and statetable are present in cell 'lanht1'. Only ff/latch will be used to model sequential cell behavior and statetable will be ignored (File /run/media/user1/c2s/cadence/install/SCLPDK/scl_pdk/stdlib/fs120/liberty/lib_flow_ff/tsl18fs120_scl_ff.lib, Line 288805)
+[02/27 20:56:06    109s] Read 534 cells in library 'tsl18fs120_scl_ff' 
+[02/27 20:56:06    109s] Reading min_timing timing library '/run/media/user1/c2s/cadence/install/SCLPDK/scl_pdk/iolib/cio150/synopsys/2002.05/models/tsl18cio150_min.lib' ...
+[02/27 20:56:06    109s] Read 93 cells in library 'tsl18cio150_min' 
+[02/27 20:56:06    109s] Starting consistency checks on late and early library sets of delay corner 'max_delay'
+[02/27 20:56:06    109s] late library set: max_timing
+[02/27 20:56:06    109s] early library set: min_timing
+[02/27 20:56:06    109s] Completed consistency checks. Status: Successful
+[02/27 20:56:06    109s] Starting consistency checks on late and early library sets of delay corner 'min_delay'
+[02/27 20:56:06    109s] late library set: max_timing
+[02/27 20:56:06    109s] early library set: min_timing
+[02/27 20:56:06    109s] Completed consistency checks. Status: Successful
+[02/27 20:56:06    109s] Ending "PreSetAnalysisView" (total cpu=0:00:01.3, real=0:00:01.0, peak res=1163.5M, current mem=1086.2M)
+[02/27 20:56:06    109s] *** End library_loading (cpu=0.02min, real=0.02min, mem=37.4M, fe_cpu=1.83min, fe_real=14.92min, fe_mem=1115.1M) ***
+[02/27 20:56:06    109s] % Begin Load netlist data ... (date=02/27 20:56:06, mem=1086.2M)
+[02/27 20:56:06    109s] *** Begin netlist parsing (mem=1115.1M) ***
+[02/27 20:56:06    109s] **WARN: (IMPVL-159):	Pin 'VDD' of cell 'aoim22d1' is defined in LEF but not in the timing library.
+[02/27 20:56:06    109s] Type 'man IMPVL-159' for more detail.
+[02/27 20:56:06    109s] **WARN: (IMPVL-159):	Pin 'VSS' of cell 'aoim22d1' is defined in LEF but not in the timing library.
+[02/27 20:56:06    109s] Type 'man IMPVL-159' for more detail.
+[02/27 20:56:06    109s] **WARN: (IMPVL-159):	Pin 'VDD' of cell 'or04d2' is defined in LEF but not in the timing library.
+[02/27 20:56:06    109s] Type 'man IMPVL-159' for more detail.
+[02/27 20:56:06    109s] **WARN: (IMPVL-159):	Pin 'VSS' of cell 'or04d2' is defined in LEF but not in the timing library.
+[02/27 20:56:06    109s] Type 'man IMPVL-159' for more detail.
+[02/27 20:56:06    109s] **WARN: (IMPVL-159):	Pin 'VDD' of cell 'an02d1' is defined in LEF but not in the timing library.
+[02/27 20:56:06    109s] Type 'man IMPVL-159' for more detail.
+[02/27 20:56:06    109s] **WARN: (IMPVL-159):	Pin 'VSS' of cell 'an02d1' is defined in LEF but not in the timing library.
+[02/27 20:56:06    109s] Type 'man IMPVL-159' for more detail.
+[02/27 20:56:06    109s] **WARN: (IMPVL-159):	Pin 'VDD' of cell 'nd02da' is defined in LEF but not in the timing library.
+[02/27 20:56:06    109s] Type 'man IMPVL-159' for more detail.
+[02/27 20:56:06    109s] **WARN: (IMPVL-159):	Pin 'VSS' of cell 'nd02da' is defined in LEF but not in the timing library.
+[02/27 20:56:06    109s] Type 'man IMPVL-159' for more detail.
+[02/27 20:56:06    109s] **WARN: (IMPVL-159):	Pin 'VDD' of cell 'dl03d2' is defined in LEF but not in the timing library.
+[02/27 20:56:06    109s] Type 'man IMPVL-159' for more detail.
+[02/27 20:56:06    109s] **WARN: (IMPVL-159):	Pin 'VSS' of cell 'dl03d2' is defined in LEF but not in the timing library.
+[02/27 20:56:06    109s] Type 'man IMPVL-159' for more detail.
+[02/27 20:56:06    109s] **WARN: (IMPVL-159):	Pin 'VDD' of cell 'invtd7' is defined in LEF but not in the timing library.
+[02/27 20:56:06    109s] Type 'man IMPVL-159' for more detail.
+[02/27 20:56:06    109s] **WARN: (IMPVL-159):	Pin 'VSS' of cell 'invtd7' is defined in LEF but not in the timing library.
+[02/27 20:56:06    109s] Type 'man IMPVL-159' for more detail.
+[02/27 20:56:06    109s] **WARN: (IMPVL-159):	Pin 'VDD' of cell 'slnht2' is defined in LEF but not in the timing library.
+[02/27 20:56:06    109s] Type 'man IMPVL-159' for more detail.
+[02/27 20:56:06    109s] **WARN: (IMPVL-159):	Pin 'VSS' of cell 'slnht2' is defined in LEF but not in the timing library.
+[02/27 20:56:06    109s] Type 'man IMPVL-159' for more detail.
+[02/27 20:56:06    109s] **WARN: (IMPVL-159):	Pin 'VDD' of cell 'aoim22d2' is defined in LEF but not in the timing library.
+[02/27 20:56:06    109s] Type 'man IMPVL-159' for more detail.
+[02/27 20:56:06    109s] **WARN: (IMPVL-159):	Pin 'VSS' of cell 'aoim22d2' is defined in LEF but not in the timing library.
+[02/27 20:56:06    109s] Type 'man IMPVL-159' for more detail.
+[02/27 20:56:06    109s] **WARN: (IMPVL-159):	Pin 'VDD' of cell 'mffnrb2' is defined in LEF but not in the timing library.
+[02/27 20:56:06    109s] Type 'man IMPVL-159' for more detail.
+[02/27 20:56:06    109s] **WARN: (IMPVL-159):	Pin 'VSS' of cell 'mffnrb2' is defined in LEF but not in the timing library.
+[02/27 20:56:06    109s] Type 'man IMPVL-159' for more detail.
+[02/27 20:56:06    109s] **WARN: (IMPVL-159):	Pin 'VDD' of cell 'nr03d7' is defined in LEF but not in the timing library.
+[02/27 20:56:06    109s] Type 'man IMPVL-159' for more detail.
+[02/27 20:56:06    109s] **WARN: (IMPVL-159):	Pin 'VSS' of cell 'nr03d7' is defined in LEF but not in the timing library.
+[02/27 20:56:06    109s] Type 'man IMPVL-159' for more detail.
+[02/27 20:56:06    109s] **WARN: (EMS-27):	Message (IMPVL-159) has exceeded the current message display limit of 20.
+[02/27 20:56:06    109s] To increase the message display limit, refer to the product command reference manual.
+[02/27 20:56:06    109s] Pin 'VDD' of cell 'pvdi' is declared as power/ground in LEF but as signal in timing library.  Treat it as power/ground.
+[02/27 20:56:06    109s] Pin 'VDDC' of cell 'pvdc' is declared as power/ground in LEF but as signal in timing library.  Treat it as power/ground.
+[02/27 20:56:06    109s] Pin 'VDDO' of cell 'pvda' is declared as power/ground in LEF but as signal in timing library.  Treat it as power/ground.
+[02/27 20:56:06    109s] Pin 'VSS' of cell 'pv0i' is declared as power/ground in LEF but as signal in timing library.  Treat it as power/ground.
+[02/27 20:56:06    109s] Pin 'VSS' of cell 'pv0f' is declared as power/ground in LEF but as signal in timing library.  Treat it as power/ground.
+[02/27 20:56:06    109s] Pin 'VSSC' of cell 'pv0c' is declared as power/ground in LEF but as signal in timing library.  Treat it as power/ground.
+[02/27 20:56:06    109s] Pin 'VSSO' of cell 'pv0a' is declared as power/ground in LEF but as signal in timing library.  Treat it as power/ground.
+[02/27 20:56:06    109s] Pin 'AVDD' of cell 'apvdi' is declared as power/ground in LEF but as signal in timing library.  Treat it as power/ground.
+[02/27 20:56:06    109s] Pin 'AVDDO' of cell 'apvda' is declared as power/ground in LEF but as signal in timing library.  Treat it as power/ground.
+[02/27 20:56:06    109s] Pin 'AVSS' of cell 'apv0i' is declared as power/ground in LEF but as signal in timing library.  Treat it as power/ground.
+[02/27 20:56:06    109s] Pin 'AVSSO' of cell 'apv0a' is declared as power/ground in LEF but as signal in timing library.  Treat it as power/ground.
+[02/27 20:56:06    109s] Created 627 new cells from 4 timing libraries.
+[02/27 20:56:06    109s] Reading netlist ...
+[02/27 20:56:06    109s] Backslashed names will retain backslash and a trailing blank character.
+[02/27 20:56:06    109s] Reading verilogBinary netlist '/run/media/user1/c2s/S5_training_batch2/Vinayak3/07_Placement/Placement/fifo_top_placed.enc.dat/fifo_top.v.bin'
+[02/27 20:56:06    109s] 
+[02/27 20:56:06    109s] *** Memory Usage v#1 (Current mem = 1123.094M, initial mem = 486.988M) ***
+[02/27 20:56:06    109s] *** End netlist parsing (cpu=0:00:00.0, real=0:00:00.0, mem=1123.1M) ***
+[02/27 20:56:06    109s] % End Load netlist data ... (date=02/27 20:56:06, total cpu=0:00:00.0, real=0:00:00.0, peak res=1104.7M, current mem=1104.7M)
+[02/27 20:56:06    109s] **ERROR: (IMPSYC-300):	Cell fifo not found.
+**ERROR: (IMPVL-904):	Can't set top cell to "fifo" because it does not exist.  Exiting!
+[02/27 20:56:13    110s] 
+[02/27 20:56:13    110s] *** Memory Usage v#1 (Current mem = 1115.094M, initial mem = 486.988M) ***
+[02/27 20:56:13    110s] 
+[02/27 20:56:13    110s] *** Summary of all messages that are not suppressed in this session:
+[02/27 20:56:13    110s] Severity  ID               Count  Summary                                  
+[02/27 20:56:13    110s] WARNING   IMPLF-200           49  Pin '%s' in macro '%s' has no ANTENNAGAT...
+[02/27 20:56:13    110s] ERROR     IMPSYT-6729          1  %s                                       
+[02/27 20:56:13    110s] ERROR     IMPSYT-16038         3  The specified file '%s' could not be fou...
+[02/27 20:56:13    110s] ERROR     IMPSYC-300           1  Cell %s not found.                       
+[02/27 20:56:13    110s] ERROR     IMPVL-904            2  Can't set top cell to "%s" because it do...
+[02/27 20:56:13    110s] WARNING   IMPVL-159         1435  Pin '%s' of cell '%s' is defined in LEF ...
+[02/27 20:56:13    110s] ERROR     IMPIMEX-7327         1  The file '%s' from the init_lef_file var...
+[02/27 20:56:13    110s] ERROR     IMPIMEX-7023         6  The file %s inside the saved design dire...
+[02/27 20:56:13    110s] ERROR     IMPIMEX-4018         2  Side file '%s' is not saved by saveDesig...
+[02/27 20:56:13    110s] *** Message Summary: 1484 warning(s), 16 error(s)
+[02/27 20:56:13    110s] 
+[02/27 20:56:13    110s] --- Ending "Innovus" (totcpu=0:01:51, real=0:15:02, mem=1115.1M) ---

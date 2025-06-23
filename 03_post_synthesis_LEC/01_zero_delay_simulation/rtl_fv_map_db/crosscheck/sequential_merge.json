@@ -1,0 +1,71 @@
+{
+ "filetype": "conformal-table",
+ "data": [
+  {
+   "Object": "/e/empty_reg",
+   "Type": "DFF",
+   "Design": "G",
+   "User Setup representative": "/e/empty_r_reg",
+   "LEC representative": "/e/empty_r_reg",
+   "User Setup phase": "+",
+   "LEC phase": "+",
+   "highlite": 0
+  },
+  {
+   "Object": "/e/rd_addr_grey_reg[4]",
+   "Type": "DFF",
+   "Design": "G",
+   "User Setup representative": "/e/rd_addr_bin_r_reg[4]",
+   "LEC representative": "/e/rd_addr_bin_r_reg[4]",
+   "User Setup phase": "+",
+   "LEC phase": "+",
+   "highlite": 0
+  },
+  {
+   "Object": "/f/full_reg",
+   "Type": "DFF",
+   "Design": "G",
+   "User Setup representative": "/f/full_r_reg",
+   "LEC representative": "/f/full_r_reg",
+   "User Setup phase": "+",
+   "LEC phase": "+",
+   "highlite": 0
+  },
+  {
+   "Object": "/f/wr_addr_grey_reg[4]",
+   "Type": "DFF",
+   "Design": "G",
+   "User Setup representative": "/f/wr_addr_bin_r_reg[4]",
+   "LEC representative": "/f/wr_addr_bin_r_reg[4]",
+   "User Setup phase": "+",
+   "LEC phase": "+",
+   "highlite": 0
+  }
+ ],
+ "cols": [
+  {
+   "key": "Object"
+  },
+  {
+   "key": "Type"
+  },
+  {
+   "key": "Design"
+  },
+  {
+   "key": "User Setup representative"
+  },
+  {
+   "key": "LEC representative"
+  },
+  {
+   "key": "User Setup phase"
+  },
+  {
+   "key": "LEC phase"
+  }
+ ],
+ "sort": [
+  "-highlite"
+ ]
+}

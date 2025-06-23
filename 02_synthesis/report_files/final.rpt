@@ -1,0 +1,51 @@
+
+
+Working Directory = /run/media/user1/c2s/S5_training_batch2/Vinayak3/02_synthesis
+QoS Summary for fifo_top
+==========================================================================================
+Metric                          generic         map             syn_opt         final          
+==========================================================================================
+Slack (ps):                     5,270           5,147           5,147           5,147
+  R2R (ps):                    11,174          10,017           9,795           9,795
+  I2R (ps):                     5,270           5,147           5,147           5,147
+  R2O (ps):                    20,904          19,293          19,293          19,293
+  I2O (ps):                  no_value        no_value        no_value        no_value
+  CG  (ps):                  no_value        no_value        no_value        no_value
+TNS (ps):                           0               0               0               0
+  R2R (ps):                         0               0               0               0
+  I2R (ps):                         0               0               0               0
+  R2O (ps):                         0               0               0               0
+  I2O (ps):                  no_value        no_value        no_value        no_value
+  CG  (ps):                  no_value        no_value        no_value        no_value
+Failing Paths:                      0               0               0               0
+Cell Area:                     55,158          51,341          51,329          51,329
+Total Cell Area:               55,158          51,341          51,329          51,329
+Leaf Instances:                   619             380             379             379
+Total Instances:                  619             380             379             379
+Utilization (%):                 0.00            0.00            0.00            0.00
+Tot. Net Length (um):        no_value        no_value        no_value        no_value
+Avg. Net Length (um):        no_value        no_value        no_value        no_value
+Route Overflow H (%):        no_value        no_value        no_value        no_value
+Route Overflow V (%):        no_value        no_value        no_value        no_value
+MBCI(%) (bits/gate) :            0.00            0.00            0.00            0.00
+Norm Cong Hotspot Area:
+  Max Cong:                  no_value        no_value        no_value        no_value
+  Tot Cong:                  no_value        no_value        no_value        no_value
+==========================================================================================
+CPU  Runtime (h:m:s):        00:30:14        00:30:08        00:30:02        00:30:00
+Real Runtime (h:m:s):        00:30:46        00:30:06        00:30:03        00:30:00
+CPU  Elapsed (h:m:s):        00:30:19        00:30:27        00:30:29        00:30:29
+Real Elapsed (h:m:s):        00:30:48        00:30:54        00:30:57        00:30:57
+Memory (MB):                  1676.29         1686.39         1687.21         1695.21
+==========================================================================================
+==========================================================================================
+Flow Settings:
+==========================================================================================
+Total Runtime (h:m:s): 00:30:55
+Total Memory (MB):     1695.21
+Executable Version:    21.18-s082_1
+==========================================================================================
+Total Cell Area =  Cell Area + Physical Cell Area
+Total Instances =  Leaf Instances + Physical Instances
+
+
