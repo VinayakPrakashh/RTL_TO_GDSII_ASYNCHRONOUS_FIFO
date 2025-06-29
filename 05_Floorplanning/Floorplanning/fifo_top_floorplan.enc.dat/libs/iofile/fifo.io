@@ -1,1 +1,0 @@
-/run/media/user1/c2s/S5_training_batch2/Vinayak3/05_Floorplanning/fifo.io

@@ -1,6 +1,6 @@
 # ####################################################################
 
-#  Created by Genus(TM) Synthesis Solution 21.18-s082_1 on Thu Feb 20 10:59:06 IST 2025
+#  Created by Genus(TM) Synthesis Solution 21.18-s082_1 on Tue Mar 04 16:10:13 IST 2025
 
 # ####################################################################
 
@@ -202,11 +202,7 @@ set_false_path -from [list \
   [get_cells {e/rd_addr_grey_reg[3]}]  \
   [get_cells {e/rd_addr_grey_reg[2]}]  \
   [get_cells {e/rd_addr_grey_reg[1]}]  \
-  [get_cells {e/rd_addr_grey_reg[0]}]  \
-  [get_cells wr_sync/rst_sync_reg]  \
-  [get_cells wr_sync/rst_sync_reg_reg]  \
-  [get_cells rd_sync/rst_sync_reg]  \
-  [get_cells rd_sync/rst_sync_reg_reg] ]
+  [get_cells {e/rd_addr_grey_reg[0]}] ]
 set_false_path -from [get_clocks read_clk] -to [get_clocks write_clk]
 set_false_path -from [get_clocks read_clk] -to [get_clocks wr_vir_clk_i]
 set_false_path -from [get_clocks write_clk] -to [get_clocks read_clk]
@@ -393,11 +389,7 @@ group_path -weight 1.000000 -name I2R -from [list \
   [get_cells {e/rd_addr_grey_reg[3]}]  \
   [get_cells {e/rd_addr_grey_reg[2]}]  \
   [get_cells {e/rd_addr_grey_reg[1]}]  \
-  [get_cells {e/rd_addr_grey_reg[0]}]  \
-  [get_cells wr_sync/rst_sync_reg]  \
-  [get_cells wr_sync/rst_sync_reg_reg]  \
-  [get_cells rd_sync/rst_sync_reg]  \
-  [get_cells rd_sync/rst_sync_reg_reg] ]
+  [get_cells {e/rd_addr_grey_reg[0]}] ]
 group_path -weight 1.000000 -name R2O -from [list \
   [get_cells {wr_addr_sync/dff_1/rd_data_reg[0]}]  \
   [get_cells f/full_r_reg]  \
@@ -566,11 +558,7 @@ group_path -weight 1.000000 -name R2O -from [list \
   [get_cells {e/rd_addr_grey_reg[3]}]  \
   [get_cells {e/rd_addr_grey_reg[2]}]  \
   [get_cells {e/rd_addr_grey_reg[1]}]  \
-  [get_cells {e/rd_addr_grey_reg[0]}]  \
-  [get_cells wr_sync/rst_sync_reg]  \
-  [get_cells wr_sync/rst_sync_reg_reg]  \
-  [get_cells rd_sync/rst_sync_reg]  \
-  [get_cells rd_sync/rst_sync_reg_reg] ] -to [list \
+  [get_cells {e/rd_addr_grey_reg[0]}] ] -to [list \
   [get_ports {rd_data_pad[7]}]  \
   [get_ports {rd_data_pad[6]}]  \
   [get_ports {rd_data_pad[5]}]  \
@@ -749,11 +737,7 @@ group_path -weight 1.000000 -name R2R -from [list \
   [get_cells {e/rd_addr_grey_reg[3]}]  \
   [get_cells {e/rd_addr_grey_reg[2]}]  \
   [get_cells {e/rd_addr_grey_reg[1]}]  \
-  [get_cells {e/rd_addr_grey_reg[0]}]  \
-  [get_cells wr_sync/rst_sync_reg]  \
-  [get_cells wr_sync/rst_sync_reg_reg]  \
-  [get_cells rd_sync/rst_sync_reg]  \
-  [get_cells rd_sync/rst_sync_reg_reg] ] -to [list \
+  [get_cells {e/rd_addr_grey_reg[0]}] ] -to [list \
   [get_cells {wr_addr_sync/dff_1/rd_data_reg[0]}]  \
   [get_cells f/full_r_reg]  \
   [get_cells {f/wr_addr_bin_r_reg[0]}]  \
@@ -921,11 +905,7 @@ group_path -weight 1.000000 -name R2R -from [list \
   [get_cells {e/rd_addr_grey_reg[3]}]  \
   [get_cells {e/rd_addr_grey_reg[2]}]  \
   [get_cells {e/rd_addr_grey_reg[1]}]  \
-  [get_cells {e/rd_addr_grey_reg[0]}]  \
-  [get_cells wr_sync/rst_sync_reg]  \
-  [get_cells wr_sync/rst_sync_reg_reg]  \
-  [get_cells rd_sync/rst_sync_reg]  \
-  [get_cells rd_sync/rst_sync_reg_reg] ]
+  [get_cells {e/rd_addr_grey_reg[0]}] ]
 group_path -weight 1.000000 -name I2O -from [list \
   [get_ports wr_clk_pad]  \
   [get_ports rd_clk_pad]  \

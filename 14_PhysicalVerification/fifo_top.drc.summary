@@ -1,0 +1,82 @@
+
+
+==================================================================================
+=== CALIBRE::DRC-H SUMMARY REPORT
+===
+Execution Date/Time:       Wed Mar  5 16:58:06 2025
+Calibre Version:           v2022.4_28.13    Tue Nov 1 14:48:02 PDT 2022
+Rule File Pathname:        _ANTENNA.header_
+Rule File Title:           
+Layout System:             GDS
+Layout Path(s):            fifo_top.calibre.db
+Layout Primary Cell:       fifo_top
+Current Directory:         /run/media/user1/c2s/S5_training_batch2/VINAYAK/14_PhysicalVerification
+User Name:                 user1
+Maximum Results/RuleCheck: 1000
+Maximum Result Vertices:   4096
+DRC Results Database:      fifo_top.drc_antenna.results (ASCII)
+Layout Depth:              ALL
+Text Depth:                PRIMARY
+Summary Report File:       fifo_top.drc.summary (REPLACE)
+Geometry Flagging:         ACUTE = YES  SKEW = YES  ANGLED = NO  OFFGRID = YES
+                           NONSIMPLE POLYGON = NO  NONSIMPLE PATH = NO
+Excluded Cells:           
+CheckText Mapping:         COMMENT TEXT + RULE FILE INFORMATION
+Layers:                    MEMORY-BASED
+Keep Empty Checks:         NO
+----------------------------------------------------------------------------------
+--- RUNTIME WARNINGS
+---
+ACUTE angle on layer M2 at location (64.11,0.99) in cell subil_pngatebuff.
+ACUTE angle on layer M2 at location (64.11,0.99) in cell subil_pngatebuff_ESD122.
+ACUTE angle on layer M2 at location (64.11,0.99) in cell subil_pngatebuff_ESD1.
+ACUTE angle on layer AA at location (28.73,325.56) in cell subil_midconer2.
+ACUTE angle on layer AA at location (34.43,317.94) in cell subil_midconer2.
+ACUTE angle on layer AA at location (36.86,315.64) in cell subil_midconer2.
+ACUTE angle on layer M3 at location (35.88,332.87) in cell subil_midconer2.
+ACUTE angle on layer MT at location (10.58,346.34) in cell subil_midconer2.
+ACUTE angle on layer MT at location (26.42,324.48) in cell subil_midconer2.
+----------------------------------------------------------------------------------
+--- ORIGINAL LAYER STATISTICS
+---
+LAYER AA ... TOTAL Original Geometry Count = 339   (110844)
+LAYER GC ... TOTAL Original Geometry Count = 220   (55011)
+LAYER CS ... TOTAL Original Geometry Count = 20775 (979132)
+LAYER HV ... TOTAL Original Geometry Count = 59    (1938)
+LAYER M1 ... TOTAL Original Geometry Count = 1950  (171386)
+LAYER V2 ... TOTAL Original Geometry Count = 9947  (455344)
+LAYER M2 ... TOTAL Original Geometry Count = 3239  (13457)
+LAYER V3 ... TOTAL Original Geometry Count = 15546 (406568)
+LAYER M3 ... TOTAL Original Geometry Count = 1524  (6758)
+LAYER VT ... TOTAL Original Geometry Count = 39890 (497221)
+LAYER MT ... TOTAL Original Geometry Count = 163   (3091)
+----------------------------------------------------------------------------------
+--- RULECHECK RESULTS STATISTICS
+---
+RULECHECK AP1 ...... TOTAL Result Count = 0 (0)
+RULECHECK AC1 ...... TOTAL Result Count = 0 (0)
+RULECHECK AM1_M1 ... TOTAL Result Count = 0 (0)
+RULECHECK AM2_M1 ... TOTAL Result Count = 0 (0)
+RULECHECK AV1_V2 ... TOTAL Result Count = 0 (0)
+RULECHECK AV2_V2 ... TOTAL Result Count = 0 (0)
+RULECHECK AM1_M2 ... TOTAL Result Count = 0 (0)
+RULECHECK AM2_M2 ... TOTAL Result Count = 0 (0)
+RULECHECK AV1_V3 ... TOTAL Result Count = 0 (0)
+RULECHECK AV2_V3 ... TOTAL Result Count = 0 (0)
+RULECHECK AM1_M3 ... TOTAL Result Count = 0 (0)
+RULECHECK AM2_M3 ... TOTAL Result Count = 0 (0)
+RULECHECK AV1_VT ... TOTAL Result Count = 0 (0)
+RULECHECK AV2_VT ... TOTAL Result Count = 0 (0)
+RULECHECK AM1_MT ... TOTAL Result Count = 0 (0)
+RULECHECK AM2_MT ... TOTAL Result Count = 0 (0)
+----------------------------------------------------------------------------------
+--- RULECHECK RESULTS STATISTICS (BY CELL)
+---
+----------------------------------------------------------------------------------
+--- SUMMARY
+---
+TOTAL CPU Time:                  1
+TOTAL REAL Time:                 5
+TOTAL Original Layer Geometries: 93652 (2700750)
+TOTAL DRC RuleChecks Executed:   16
+TOTAL DRC Results Generated:     0 (0)

@@ -1,0 +1,7 @@
+Command exited with non-zero status 255
+{"vcs1":{"timestamp_begin":1741086329.725880432, "rt":1.25, "ut":0.06, "st":0.03}}
+{"SNPS_VCS_INTERNAL_ROOT_START_TIME": 1741086329.336463024}
+{"VCS_COMP_START_TIME": 1741086329.336463024}
+{"VCS_COMP_END_TIME": 1741086331.028970130}
+{"VCS_USER_OPTIONS": "-v fifo_top_incremental.v fifo_tb.v pc3c01.v pc3d01.v pc3o05.v tsl18fs120_scl.v +delay_mode_unit -o test -debug_all -Mupdate -full64"}
+{"vcs1": {"peak_mem": 353524}}

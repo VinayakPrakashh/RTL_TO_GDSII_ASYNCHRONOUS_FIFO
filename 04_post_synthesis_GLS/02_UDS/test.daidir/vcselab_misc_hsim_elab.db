@@ -1,6 +1,6 @@
 psSimBaseName                      	test
 psLogFileName                      	NULL
-pDaiDir                            	/run/media/user1/c2s/S5_training_batch2/Vinayak3/04_post_synthesis_GLS/02_UDS/test.daidir
+pDaiDir                            	/run/media/user1/c2s/S5_training_batch2/VINAYAK/04_post_synthesis_GLS/02_UDS/test.daidir
 destPath                           	csrc/
 fSharedMaster                      	0
 fHsimPCSharedLibSpecified          	0

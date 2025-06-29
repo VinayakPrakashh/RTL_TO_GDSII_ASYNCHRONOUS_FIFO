@@ -1,7 +1,7 @@
 #######################################################
 #                                                     
 #  Innovus Command Logging File                     
-#  Created on Thu Feb 27 20:29:01 2025                
+#  Created on Tue Mar  4 18:13:55 2025                
 #                                                     
 #######################################################
 
@@ -19,12 +19,11 @@ win
 encMessage warning 0
 encMessage debug 0
 is_common_ui_mode
-restoreDesign /run/media/user1/c2s/S5_training_batch2/Vinayak3/07_Placement/Placement/fifo_top_placed.enc.dat fifo_top
+restoreDesign /run/media/user1/c2s/S5_training_batch2/VINAYAK/07_Placement/Placement/fifo_top.enc.dat fifo_top
 setDrawView fplan
 encMessage warning 1
 encMessage debug 0
-setDrawView place
-set init_top_cell FIFO
+set init_top_cell fifo_top
 set_global report_timing_format {instance arc net cell slew delay arrival required}
 set_analysis_view -setup {worst} -hold {best}
 setAnalysisMode -analysisType onChipVariation -cppr both
@@ -39,7 +38,7 @@ set_ccopt_property -net_type trunk route_type trunk_rule
 set_ccopt_property -net_type top route_type trunk_rule
 set_ccopt_property primary_delay_corner max_delay
 set_ccopt_property route_type_autotrim false
-create_ccopt_clock_tree_spec -file ./Clock_Tree_Synthesis/FIFO_ccopt.spec
+create_ccopt_clock_tree_spec -file ./Clock_Tree_Synthesis/fifo_top_ccopt.spec
 get_ccopt_clock_trees
 ccopt_check_and_flatten_ilms_no_restore
 set_ccopt_property cts_is_sdc_clock_root -pin rd_clk_pad true
@@ -88,15 +87,18 @@ ctd_win -id trial_mode
 set_ccopt_property balance_mode full
 ccopt_design -cts
 ctd_win -id full_mode
-report_ccopt_clock_trees -summary -file ./Clock_Tree_Synthesis/FIFO_clock_trees.rpt
-report_ccopt_skew_groups -summary -file ./Clock_Tree_Synthesis/FIFO_skew_group.rpt
-reportCongestion -overflow -hotSpot > ./Clock_Tree_Synthesis/FIFO_congestion.rpt
+report_ccopt_clock_trees -summary -file ./Clock_Tree_Synthesis/fifo_top_clock_trees.rpt
+report_ccopt_skew_groups -summary -file ./Clock_Tree_Synthesis/fifo_top_skew_group.rpt
+reportCongestion -overflow -hotSpot > ./Clock_Tree_Synthesis/fifo_top_congestion.rpt
+selectObject Module m
 redirect -quiet {set honorDomain [getAnalysisMode -honorClockDomains]} > /dev/null
 timeDesign -postCTS -pathReports -drvReports -slackReports -numPaths 500 -prefix fifo_top_postCTS -outDir timingReports
 redirect -quiet {set honorDomain [getAnalysisMode -honorClockDomains]} > /dev/null
 timeDesign -postCTS -hold -pathReports -slackReports -numPaths 500 -prefix fifo_top_postCTS -outDir timingReports
-saveDesign fifo_top_cts.enc
-redirect -quiet {set honorDomain [getAnalysisMode -honorClockDomains]} > /dev/null
-timeDesign -postCTS -hold -pathReports -slackReports -numPaths 500 -prefix fifo_top_postCTS -outDir timingReports
 setOptMode -fixCap true -fixTran true -fixFanoutLoad true
 optDesign -postCTS -hold
+saveDesign fifo_top_cts.enc
+zoomBox -1682.75400 -548.43100 5597.78900 3046.65100
+saveNetlist -includePowerGround ./Clock_Tree_Synthesis/fifo_postCTS_withPG.v
+saveNetlist ./Clock_Tree_Synthesis/fifo_postCTS_withoutPG.v
+saveNetlist ./Clock_Tree_Synthesis/fifo_CTS.enc

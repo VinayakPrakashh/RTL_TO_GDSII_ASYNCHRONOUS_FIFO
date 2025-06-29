@@ -1,6 +1,6 @@
 psSimBaseName                      	test
 psLogFileName                      	NULL
-pDaiDir                            	/run/media/user1/c2s/S5_training_batch2/Vinayak3/04_post_synthesis_GLS/01_ZDS/test.daidir
+pDaiDir                            	/run/media/user1/c2s/S5_training_batch2/VINAYAK/04_post_synthesis_GLS/01_ZDS/test.daidir
 destPath                           	csrc/
 fSharedMaster                      	0
 fHsimPCSharedLibSpecified          	0
@@ -63,7 +63,7 @@ fCcExConfigFileFlag                	0
 fFsimForcelist                     	0
 fNewCBSemantics                    	1
 fSchedAtEnd                        	0
-fSpecifyInDesign                   	0
+fSpecifyInDesign                   	1
 fSvNettRealResType                 	0
 fFgpSched0User                     	0
 fFgpDynelabFix                     	1

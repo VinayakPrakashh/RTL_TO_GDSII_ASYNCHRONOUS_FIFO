@@ -1,3 +1,4 @@
+
 module fifo_top (
     input wr_clk,
     input rd_clk,
@@ -14,18 +15,13 @@ module fifo_top (
 wire [4:0] wr_addr_grey_sync, rd_addr_grey_sync;
 wire [4:0] wr_addr_grey, rd_addr_grey;
 wire [3:0] wr_addr, rd_addr;
-wire wr_rst_sync, rd_rst_sync;
+fifo_full f(.wr_clk(wr_clk), .wr_en(wr_en), .wr_rst(wr_rst), .rd_ptr_addr_sync(rd_addr_grey_sync), .full(full), .wr_addr_grey(wr_addr_grey), .wr_addr_bin(wr_addr));
+fifo_empty e(.rd_clk(rd_clk), .rd_en(rd_en), .rd_rst(rd_rst), .wr_ptr_addr_sync(wr_addr_grey_sync), .empty(empty), .rd_addr_grey(rd_addr_grey), .rd_addr_bin(rd_addr));
 
-reset_sync wr_sync(wr_clk, wr_rst, wr_rst_sync);
-reset_sync rd_sync(rd_clk, rd_rst, rd_rst_sync);
+cdc_synchronizer wr_addr_sync(.clk(wr_clk), .rst(wr_rst), .in_data(rd_addr_grey), .out_data(rd_addr_grey_sync));
+cdc_synchronizer rd_addr_sync(.clk(rd_clk), .rst(rd_rst), .in_data(wr_addr_grey), .out_data(wr_addr_grey_sync));
 
-fifo_full f(wr_clk, wr_en, wr_rst_sync, rd_addr_grey_sync, full, wr_addr_grey, wr_addr);
-fifo_empty e(rd_clk, rd_en, rd_rst_sync, wr_addr_grey_sync, empty, rd_addr_grey, rd_addr);
-
-cdc_synchronizer wr_addr_sync(wr_clk, wr_rst_sync, rd_addr_grey, rd_addr_grey_sync);
-cdc_synchronizer rd_addr_sync(rd_clk, rd_rst_sync, wr_addr_grey, wr_addr_grey_sync);
-
-fifo_memory m(wr_clk, wr_rst_sync, wr_en, full, wr_addr, rd_addr, wr_data, rd_data);
+fifo_memory m(.clk(wr_clk), .rst(wr_rst), .wr_en(wr_en), .full(full), .wr_addr(wr_addr), .rd_addr(rd_addr), .wr_data(wr_data), .rd_data(rd_data));
 
 endmodule
 
@@ -136,84 +132,51 @@ always @(posedge rd_clk or negedge rd_rst) begin
     end
 end
 endmodule
+    module fifo_memory (
+        input clk,
+        input rst,
+        input wr_en,
+        input full,
+        input [3:0] wr_addr,
+        input [3:0] rd_addr,
+        input [7:0] wr_data,
+        output [7:0] rd_data
+    );
 
-module fifo_memory (
-    input clk,
-    input rst,
-    input wr_en,
-    input full,
-    input [3:0] wr_addr,
-    input [3:0] rd_addr,
-    input [7:0] wr_data,
-    output [7:0] rd_data
-);
+    reg [7:0] mem [15:0]; //memory array
 
-reg [7:0] mem [15:0]; //memory array
+    wire wr_en_w1;
 
-wire wr_en_w1;
+    assign wr_en_w1 = (!full & wr_en); //write enable signal
 
-assign wr_en_w1 = (!full & wr_en); //write enable signal
-
-always @(posedge clk or negedge rst) begin
-    if(!rst) begin
-        mem[0] <= 8'b0;
-        mem[1] <= 8'b0;
-        mem[2] <= 8'b0;
-        mem[3] <= 8'b0;
-        mem[4] <= 8'b0;
-        mem[5] <= 8'b0;
-        mem[6] <= 8'b0;
-        mem[7] <= 8'b0;
-        mem[8] <= 8'b0;
-        mem[9] <= 8'b0;
-        mem[10] <= 8'b0;
-        mem[11] <= 8'b0;
-        mem[12] <= 8'b0;
-        mem[13] <= 8'b0;
-        mem[14] <= 8'b0;
-        mem[15] <= 8'b0;
-    end else begin
-        if(wr_en_w1) begin
-            mem[wr_addr] <= wr_data; //synchronous write
+    always @(posedge clk or negedge rst) begin
+        if(!rst) begin
+            mem[0] <= 8'b0;
+            mem[1] <= 8'b0;
+            mem[2] <= 8'b0;
+            mem[3] <= 8'b0;
+            mem[4] <= 8'b0;
+            mem[5] <= 8'b0;
+            mem[6] <= 8'b0;
+            mem[7] <= 8'b0;
+            mem[8] <= 8'b0;
+            mem[9] <= 8'b0;
+            mem[10] <= 8'b0;
+            mem[11] <= 8'b0;
+            mem[12] <= 8'b0;
+            mem[13] <= 8'b0;
+            mem[14] <= 8'b0;
+            mem[15] <= 8'b0;
+        end else begin
+            if(wr_en_w1) begin
+                mem[wr_addr] <= wr_data; //synchronous write
+            end
         end
     end
-end
 
-assign rd_data = mem[rd_addr]; //asynchronous read
+    assign rd_data = mem[rd_addr]; //asynchronous read
 
-endmodule
-
-module cdc_synchronizer(
-    input clk,
-    input rst,
-    input [4:0] in_data,
-    output [4:0] out_data
-);
-
-wire [4:0] in_data_n;
-
-dff dff_1(clk, rst, in_data, in_data_n);
-dff dff_2(clk, rst, in_data_n, out_data);
-endmodule
-module reset_sync(
-    input clk,
-    input rst,
-    output reg rst_sync
-);
-
-reg rst_sync_reg;
-
-always @(posedge clk or negedge rst) begin
-    if(!rst) begin
-        rst_sync_reg <= 1'b0;
-        rst_sync <= 1'b0;
-
-    end else begin
-        rst_sync_reg <= 1'b1;
-        rst_sync <= rst_sync_reg;
-    end
-end
-endmodule
+    endmodule
 
 module dff(
     input clk,
@@ -230,4 +193,28 @@ always @(posedge clk or negedge rst) begin
     end
 end
 
+endmodule
+
+
+module cdc_synchronizer(
+    input clk,
+    input rst,
+    input [4:0] in_data,
+    output [4:0] out_data
+);
+
+wire [4:0] in_data_n;
+
+dff dff_1(
+    .clk(clk),
+    .rst(rst),
+    .wr_data(in_data),
+    .rd_data(in_data_n)
+);
+dff dff_2(
+    .clk(clk),
+    .rst(rst),
+    .wr_data(in_data_n),
+    .rd_data(out_data)
+);
 endmodule

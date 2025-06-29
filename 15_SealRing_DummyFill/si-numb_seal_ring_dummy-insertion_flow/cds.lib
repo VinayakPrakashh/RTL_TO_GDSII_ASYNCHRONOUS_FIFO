@@ -1,0 +1,4 @@
+SOFTINCLUDE /home/user1/cds.lib
+DEFINE ssd_import /run/media/user1/c2s/S5_training_batch2/VINAYAK/15_SealRing_DummyFill/si-numb_seal_ring_dummy-insertion_flow/ssd_import
+DEFINE die_ssd_flow /run/media/user1/c2s/S5_training_batch2/VINAYAK/15_SealRing_DummyFill/si-numb_seal_ring_dummy-insertion_flow/die_ssd_flow
+DEFINE ssd_place_in_design /run/media/user1/c2s/S5_training_batch2/VINAYAK/15_SealRing_DummyFill/si-numb_seal_ring_dummy-insertion_flow/ssd_place_in_design

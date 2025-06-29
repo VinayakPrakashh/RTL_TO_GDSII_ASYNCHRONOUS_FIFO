@@ -1,105 +1,30 @@
-ucliGUI::start /run/media/user1/c2s/S5_training_batch2/Vinayak3/04_post_synthesis_GLS/02_UDS/test -ucligui 
 set ucliGUI::state
 set ucliGUI::state
 ucliCore::getToolPID
 synopsys::env hasTB
 trigger_hier_stack_context_switch 0
 synUtils::setDVEInitPhase 1
-synopsys::dump -type VPD -file /run/media/user1/c2s/S5_training_batch2/Vinayak3/04_post_synthesis_GLS/02_UDS/inter.vpd -locking
-synopsys::dump -autoflush on -fid VPD1
-set ::dve_fid VPD1
+synopsys::dump -type VPD -file /run/media/user1/c2s/S5_training_batch2/VINAYAK/04_post_synthesis_GLS/02_UDS/inter.vpd -locking
+synopsys::dump -autoflush on -fid VPD0
+set ::dve_fid VPD0
 synUtils::setDVEInitPhase 0
 ucliCore::getToolPID
-synUtils::sendTool -active _icl_setToolSocket /tmp/smlnpDx3rsG
-synUtils::sendTool -active {_icl_start_rpc -version "T-2022.06-SP2-5_Full64" -sync_file /tmp/vcs_dve_rpc.user1.216456}
-synUtils::sendTool -active {_icl_createSharedMemory /tmp/vcs_dve_general.user1.216456}
+synUtils::sendTool -active _icl_setToolSocket /tmp/smlnpRaPU7g
+synUtils::sendTool -active {_icl_start_rpc -version "T-2022.06-SP2-5_Full64" -sync_file /tmp/vcs_dve_rpc.user1.696282}
+synUtils::sendTool -active {_icl_createSharedMemory /tmp/vcs_dve_general.user1.696282}
 config endofsim noexit
 config onfail enable all
 config syscaddplainmembers
 config syscaddsourcenames
 config syscaddstructtypes
 synopsys::listing -disable
-# Begin_DVE_Session_Save_Info
-# DVE restart session
-# Saved on Tue Feb 25 12:43:22 2025
-# Designs open: 1
-#   Sim: /run/media/user1/c2s/S5_training_batch2/Vinayak3/04_post_synthesis_GLS/02_UDS/test
-# Toplevel windows open: 1
-# 	TopLevel.1
-#   Wave.1: 30 signals
-#   Source.1: fifo_tb.fifo_inst
-#   Wave.2: 1 signals
-#   Group count = 2
-#   Group fifo_inst signal count = 30
-#   Group Group1 signal count = 1
-# End_DVE_Session_Save_Info
-# DVE version: T-2022.06-SP2-5_Full64
-# DVE build date: Jul 21 2023 20:53:12
-#<Session mode="Restart" path=".restartSimSession.tcl" type="Debug">
-# Application preferences
-#<WindowLayout>
-# DVE top-level session
-# Create and position top-level window: TopLevel.1
-set TopLevel.1 TopLevel.1
-# Docked window settings
-set HSPane.1 HSPane.1
-set Hier.1 Hier.1
-set DLPane.1 DLPane.1
-set Data.1 Data.1
-set Console.1 Console.1
-# MDI window settings
-set Source.1 Source.1
-set Wave.1 Wave.1
-set Wave.2 Wave.2
-# End MDI window settings
-#</WindowLayout>
-#<Database>
-#</Database>
-# DVE Global setting session:
-# Global: Breakpoints
-# Global: Bus
-# Global: Expressions
-# Global: Signal Time Shift
-# Global: Signal Compare
-# Global: Signal Groups
-synopsys::dump -add {fifo_tb.fifo_inst} -scope "." -depth 1 -fid VPD1
-set _session_group_1 fifo_inst
-set fifo_inst "$_session_group_1"
-set _session_group_2 Group1
-set Group1 "$_session_group_2"
-# Global: Highlighting
-# Global: Stack
-synopsys::xml {set_only_active_frame <data value="1" />}
-# Post database loading setting...
-# Save global setting...
-# Wave/List view global setting
-# Close all empty TopLevel windows
-foreach __top [gui_ekki_get_window_ids -type TopLevel] {     if { [llength [gui_ekki_get_window_ids -parent $__top]] == 0} {         gui_close_window -window $__top     } }
-# DVE View/pane content session:
-# Hier 'Hier.1'
-catch {gui_list_expand -id ${Hier.1} fifo_tb}
-catch {gui_list_select -id ${Hier.1} {fifo_tb.fifo_inst}}
-# Data 'Data.1'
-# Source 'Source.1'
-# View 'Wave.1'
-set groupExD [gui_get_pref_value -category Wave -key exclusiveSG]
-set origWaveHeight [gui_get_pref_value -category Wave -key waveRowHeight]
-set origGroupCreationState [gui_list_create_group_when_add -wave]
-if {$origGroupCreationState} { 	gui_list_create_group_when_add -wave -enable }
-if { $groupExD } {  gui_msg_report -code DVWW028 }
-# View 'Wave.2'
-set groupExD [gui_get_pref_value -category Wave -key exclusiveSG]
-set origWaveHeight [gui_get_pref_value -category Wave -key waveRowHeight]
-set origGroupCreationState [gui_list_create_group_when_add -wave]
-if {$origGroupCreationState} { 	gui_list_create_group_when_add -wave -enable }
-if { $groupExD } {  gui_msg_report -code DVWW028 }
-# Restore toplevel window zorder
-# The toplevel window could be closed if it has no view/pane
-if {[gui_exist_window -window ${TopLevel.1}]} { 	gui_set_active_window -window ${TopLevel.1} 	gui_set_active_window -window ${Wave.2} }
-#</Session>
+synopsys::dump -add {fifo_tb} -scope "." -depth 1 -fid VPD0
+synopsys::dump -add {fifo_tb.mem_tb } -aggregates  -fid VPD0
 synopsys::run
 set ucliGUI::state
 set ucliGUI::state
+set synopsys::env(time) 28611002
+set synopsys::env(time) 56727002
 ucliCore::getToolPID
 ucliCore::stopTool -no_signal
 set ucliGUI::state

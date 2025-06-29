@@ -10,24 +10,24 @@ gui_set_state_value -category Globals -key &File_toolbar -value true
 gui_set_state_value -category Globals -key BackTrace_toolbar -value true
 gui_set_state_value -category Globals -key open_wave_inside -value true
 gui_set_state_value -category Globals -key recent_databases -value {{gui_open_db -file vcdplus.vpd} {gui_open_db -file mismatch.vpd -design V1} {gui_open_db -file mismatch.vpd} {gui_open_db -file mismatch_gate.vpd -design V1} {gui_open_db -file mismatch_gate.vpd}}
-gui_set_state_value -category Globals -key recent_sessions -value {{gui_load_session -ignore_errors -file /run/media/user1/c2s/aei_training/amal/01_RTLsource/DVEfiles/dve_checkpoint_1248722_1.tcl} {gui_load_session -ignore_errors -file /run/media/user1/c2s/m1mne/arun/rtl2gds/folder1/DVEfiles/dve_checkpoint_210292_2.tcl} {gui_load_session -ignore_errors -file /run/media/user1/c2s/m1mne/arun/rtl2gds/folder1/DVEfiles/dve_checkpoint_210292_1.tcl} {gui_load_session -ignore_errors -file /run/media/user1/c2s/m1mne/kannan/rtltogds/folder1/DVEfiles/dve_checkpoint_36560_2.tcl} {gui_load_session -ignore_errors -file /run/media/user1/c2s/m1mne/kannan/rtltogds/folder1/DVEfiles/dve_checkpoint_36560_1.tcl}}
+gui_set_state_value -category Globals -key recent_sessions -value {{gui_load_session -ignore_errors -file /run/media/user1/c2s/aei_training/rafi/04_Post_Synthesis_GLS/01_zero_delay_simulation/DVEfiles/dve_checkpoint_295532_1.tcl} {gui_load_session -ignore_errors -file /run/media/user1/c2s/aei_training/rafi/04_Post_Synthesis_GLS/01_zero_delay_simulation/DVEfiles/dve_checkpoint_277593_3.tcl} {gui_load_session -ignore_errors -file /run/media/user1/c2s/aei_training/rafi/04_Post_Synthesis_GLS/01_zero_delay_simulation/DVEfiles/dve_checkpoint_277593_2.tcl} {gui_load_session -ignore_errors -file /run/media/user1/c2s/aei_training/rafi/04_Post_Synthesis_GLS/01_zero_delay_simulation/DVEfiles/dve_checkpoint_277593_1.tcl} {gui_load_session -ignore_errors -file /run/media/user1/c2s/aei_training/amal/01_RTLsource/DVEfiles/dve_checkpoint_1248722_1.tcl}}
 gui_set_state_value -category Layout -key child_assertion_size_x -value 1365
 gui_set_state_value -category Layout -key child_assertion_size_y -value 149
-gui_set_state_value -category Layout -key child_console_size_x -value 1706
-gui_set_state_value -category Layout -key child_console_size_y -value 105
-gui_set_state_value -category Layout -key child_data_coltype -value 52
-gui_set_state_value -category Layout -key child_data_colvalue -value 12
-gui_set_state_value -category Layout -key child_data_colvariable -value 112
-gui_set_state_value -category Layout -key child_data_size_x -value 180
-gui_set_state_value -category Layout -key child_data_size_y -value 684
-gui_set_state_value -category Layout -key child_driver_size_x -value 1069
-gui_set_state_value -category Layout -key child_driver_size_y -value 179
+gui_set_state_value -category Layout -key child_console_size_x -value 1538
+gui_set_state_value -category Layout -key child_console_size_y -value 177
+gui_set_state_value -category Layout -key child_data_coltype -value 106
+gui_set_state_value -category Layout -key child_data_colvalue -value 23
+gui_set_state_value -category Layout -key child_data_colvariable -value 123
+gui_set_state_value -category Layout -key child_data_size_x -value 213
+gui_set_state_value -category Layout -key child_data_size_y -value 567
+gui_set_state_value -category Layout -key child_driver_size_x -value 1007
+gui_set_state_value -category Layout -key child_driver_size_y -value 186
 gui_set_state_value -category Layout -key child_hier_col3 -value {-1}
-gui_set_state_value -category Layout -key child_hier_colhier -value 256
 gui_set_state_value -category Layout -key child_hier_colpd -value 0
-gui_set_state_value -category Layout -key child_hier_coltype -value 54
-gui_set_state_value -category Layout -key child_hier_size_x -value 105
-gui_set_state_value -category Layout -key child_hier_size_y -value 684
+gui_set_state_value -category Layout -key child_hier_coltype -value 47
+gui_set_state_value -category Layout -key child_hier_size_x -value 173
+gui_set_state_value -category Layout -key child_hier_size_y -value 567
+gui_set_state_value -category Layout -key child_hier_sort_order -value 1
 gui_set_state_value -category Layout -key child_list_down -value 446
 gui_set_state_value -category Layout -key child_list_right -value 1210
 gui_set_state_value -category Layout -key child_memory_docknewline -value false
@@ -38,28 +38,28 @@ gui_set_state_value -category Layout -key child_memory_size_y -value 394
 gui_set_state_value -category Layout -key child_schematic_docknewline -value false
 gui_set_state_value -category Layout -key child_schematic_pos_x -value {-2}
 gui_set_state_value -category Layout -key child_schematic_pos_y -value {-15}
-gui_set_state_value -category Layout -key child_schematic_size_x -value 1081
-gui_set_state_value -category Layout -key child_schematic_size_y -value 410
+gui_set_state_value -category Layout -key child_schematic_size_x -value 1300
+gui_set_state_value -category Layout -key child_schematic_size_y -value 623
 gui_set_state_value -category Layout -key child_source_docknewline -value false
 gui_set_state_value -category Layout -key child_source_pos_x -value {-2}
 gui_set_state_value -category Layout -key child_source_pos_y -value {-15}
-gui_set_state_value -category Layout -key child_source_size_x -value 1081
-gui_set_state_value -category Layout -key child_source_size_y -value 410
+gui_set_state_value -category Layout -key child_source_size_x -value 1155
+gui_set_state_value -category Layout -key child_source_size_y -value 562
 gui_set_state_value -category Layout -key child_watch_size_x -value 965
 gui_set_state_value -category Layout -key child_watch_size_y -value 169
-gui_set_state_value -category Layout -key child_wave_colname -value 144
-gui_set_state_value -category Layout -key child_wave_colvalue -value 24
+gui_set_state_value -category Layout -key child_wave_colname -value 181
+gui_set_state_value -category Layout -key child_wave_colvalue -value 104
 gui_set_state_value -category Layout -key child_wave_docknewline -value false
-gui_set_state_value -category Layout -key child_wave_left -value 172
+gui_set_state_value -category Layout -key child_wave_left -value 289
 gui_set_state_value -category Layout -key child_wave_pos_x -value {-2}
 gui_set_state_value -category Layout -key child_wave_pos_y -value {-15}
-gui_set_state_value -category Layout -key child_wave_right -value 1423
-gui_set_state_value -category Layout -key child_wave_size_x -value 1605
-gui_set_state_value -category Layout -key child_wave_size_y -value 679
-gui_set_state_value -category Layout -key main_pos_x -value 0
-gui_set_state_value -category Layout -key main_pos_y -value 23
-gui_set_state_value -category Layout -key main_size_x -value 1706
-gui_set_state_value -category Layout -key main_size_y -value 911
+gui_set_state_value -category Layout -key child_wave_right -value 856
+gui_set_state_value -category Layout -key child_wave_size_x -value 1155
+gui_set_state_value -category Layout -key child_wave_size_y -value 562
+gui_set_state_value -category Layout -key main_pos_x -value 8
+gui_set_state_value -category Layout -key main_pos_y -value 31
+gui_set_state_value -category Layout -key main_size_x -value 1546
+gui_set_state_value -category Layout -key main_size_y -value 874
 gui_set_state_value -category Layout -key stand_list_child_docknewline -value false
 gui_set_state_value -category Layout -key stand_list_child_pos_x -value {-2}
 gui_set_state_value -category Layout -key stand_list_child_pos_y -value {-15}
@@ -96,19 +96,21 @@ gui_set_state_value -category Layout -key stand_wave_top_pos_x -value 8
 gui_set_state_value -category Layout -key stand_wave_top_pos_y -value 37
 gui_set_state_value -category Layout -key stand_wave_top_size_x -value 1371
 gui_set_state_value -category Layout -key stand_wave_top_size_y -value 738
+gui_set_state_value -category Data -key data_show_mode -value list
+gui_set_state_value -category Driver -key driver_add_to_wave -value true
 gui_create_state_key -category FindDialog -key m_pMatchCase -value_type bool -value false
 gui_create_state_key -category FindDialog -key m_pMatchWord -value_type bool -value false
 gui_create_state_key -category FindDialog -key m_pUseCombo -value_type string -value {}
 gui_create_state_key -category FindDialog -key m_pWrapAround -value_type bool -value true
 gui_create_state_key -category Widget_History -key Find|m_pFindFrame|m_pFindCombo -value_type string -value run
-gui_create_state_key -category Widget_History -key {TopLevel.1|qt_left_dock|DockWnd1|HSPane.1|pages|Hier.1|hbox1|Scope Explore} -value_type string -value slnlq2
+gui_create_state_key -category Widget_History -key {TopLevel.1|qt_left_dock|DockWnd1|HSPane.1|pages|Hier.1|hbox1|Scope Explore} -value_type string -value {ad01d0 slnlq2}
 gui_create_state_key -category Widget_History -key TopLevel.1|qt_left_dock|DockWnd1|HSPane.1|pages|Hier.1|hbox|textfilter -value_type string -value mux
 gui_create_state_key -category Widget_History -key TopLevel.1|qt_top_dock|&Edit|FindCombo -value_type string -value run
 gui_create_state_key -category Widget_History -key TopLevel.2|qt_top_dock|&Edit|FindCombo -value_type string -value run
 gui_create_state_key -category Widget_History -key {dlgSimSetup|m_setupTab|tab pages|BuildTab|m_rebuildBtnGroup|m_customCmdCombo} -value_type string -value {{make t1}}
 gui_create_state_key -category Widget_History -key {dlgSimSetup|m_setupTab|tab pages|SimTab|m_VPDCombo} -value_type string -value inter.vpd
 gui_create_state_key -category Widget_History -key {dlgSimSetup|m_setupTab|tab pages|SimTab|m_argsCombo} -value_type string -value {{+ntb_random_seed_automatic +UVM_TESTNAME=apb_base_test +UVM_VERBOSITY=HIGH -a ../sim/apb_base_test_vcs.log}}
-gui_create_state_key -category Widget_History -key {dlgSimSetup|m_setupTab|tab pages|SimTab|m_curDirCombo} -value_type string -value {/run/media/user1/c2s/S5_training/neeraj/01_RTL /run/media/user1/c2s/M3_verification2/ces_svtb_2019.06/labs/editedapb/apb_timer_uvm}
+gui_create_state_key -category Widget_History -key {dlgSimSetup|m_setupTab|tab pages|SimTab|m_curDirCombo} -value_type string -value {/run/media/user1/c2s/S5_training_batch2/Vinayak3/04_post_synthesis_GLS/02_UDS /run/media/user1/c2s/S5_training_batch2/Elston/01_RTL /run/media/user1/c2s/S5_training/neeraj/01_RTL /run/media/user1/c2s/M3_verification2/ces_svtb_2019.06/labs/editedapb/apb_timer_uvm}
 gui_create_state_key -category Widget_History -key {dlgSimSetup|m_setupTab|tab pages|SimTab|m_exeCombo} -value_type string -value {./test simv}
 gui_create_state_key -category SearchDialog -key MatchCase -value_type bool -value false
 gui_create_state_key -category SearchDialog -key MatchWord -value_type bool -value true
@@ -118,41 +120,16 @@ gui_state_default_create -off
 
 # Begin command logging
 gui_sim_run Ucli -exe ./test -args {-ucligui  } -dir .
-gui_list_expand -id  Hier.1   fifo_tb
-gui_list_select -id Hier.1 -current_item_name fifo_tb.fifo_inst -current_item_type Scope  -selected  { fifo_tb.fifo_inst   }
 gui_open_window Wave
-gui_list_add -id Wave.1 -from Hier.1 { fifo_tb.fifo_inst } -insertionbar
+gui_list_add -id Wave.1 -from Hier.1 { fifo_tb } -insertionbar
 gui_sim_continue  
 set dveMisc::stop_tcl_loop 1
 gui_sim_stop 
 gui_zoom -window Wave.1 -full
+gui_zoom -window  Wave.1  -factor 2
+gui_zoom -window  Wave.1  -factor 2
+gui_zoom -window  Wave.1  -factor 2
+gui_zoom -window  Wave.1  -factor 2
+gui_zoom -window  Wave.1  -factor 2
+gui_zoom -window  Wave.1  -factor 2
 gui_wv_scroll_hslidermove -id  Wave.1 0
-gui_wv_scroll_hslidermove -id  Wave.1 0
-gui_wv_scroll_hslidermove -id  Wave.1 0
-gui_zoom -window  Wave.1  -factor 0.5
-gui_zoom -window  Wave.1  -factor 0.5
-gui_wv_zoom_timerange -id  Wave.1 2096742 55713440
-gui_wv_zoom_timerange -id  Wave.1 3065045 15023036
-gui_view_port_history -window Wave.1 -next
-gui_zoom -window Wave.1 -factor 2
-gui_zoom -window Wave.1 -factor 2
-gui_zoom -window Wave.1 -factor 2
-gui_zoom -window Wave.1 -factor 2
-gui_wv_scroll_hslidermove -id  Wave.1 0
-gui_marker_move -id  Wave.1 C1 69803
-gui_zoom -window Wave.1 -factor 2
-gui_wv_scroll_hslidermove -id  Wave.1 0
-gui_zoom -window Wave.1 -factor 2
-gui_wv_scroll_hslidermove -id  Wave.1 0
-gui_wv_scroll_hslidermove -id  Wave.1 0
-gui_wv_scroll_hslidermove -id  Wave.1 0
-gui_wv_scroll_hslidermove -id  Wave.1 0
-gui_marker_move -id  Wave.1 C1 16100
-gui_wv_scroll_hslidermove -id  Wave.1 0
-gui_wv_scroll_hslidermove -id  Wave.1 0
-gui_wv_scroll_hslidermove -id  Wave.1 0
-gui_marker_move -id  Wave.1 C1 31900
-gui_zoom -window  Wave.1  -factor 0.5
-gui_view_port_history -window Wave.1 -next
-gui_zoom -window  Wave.1  -full
-gui_wv_zoom_timerange -id  Wave.1 4867438 11981385

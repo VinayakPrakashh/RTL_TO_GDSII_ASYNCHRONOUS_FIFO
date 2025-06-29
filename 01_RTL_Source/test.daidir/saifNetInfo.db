@@ -1,4 +1,4 @@
-19
+17
 cdc_synchronizer
 in_data_n
 All
@@ -42,9 +42,6 @@ fifo_top
 rd_addr_grey_sync
 All
 fifo_top
-rd_rst_sync
-Scal
-fifo_top
 wr_addr
 All
 fifo_top
@@ -53,6 +50,3 @@ All
 fifo_top
 wr_addr_grey_sync
 All
-fifo_top
-wr_rst_sync
-Scal

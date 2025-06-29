@@ -1,0 +1,16 @@
+#
+# Edit Lock-Stake file. CAUTION: Please do not change.
+#
+# Information about current Edit Lock Owner.
+#
+LockStakeVersion               1.1
+LoginName                      user1
+HostName                       c2slab.cet.ac.in
+ProcessIdentifier              670482
+ProcessCreationTime_UTC        1741176230
+ProcessCreationTime_Readable   Wed Mar  5 17:33:50 2025 IST
+AppIdentifier                  OA File System Design Manager
+OSType                         unix
+ReasonForPlacingEditLock       OpenAccess edit lock
+FilePathUsedToEditLock         /run/media/user1/c2s/S5_training_batch2/VINAYAK/15_SealRing_DummyFill/si-numb_seal_ring_dummy-insertion_flow/ssd_import/TS18_SealRing_SL_4M1L_a0/layout/layout.oa.cdslck
+TimeEditLocked                 Wed Mar  5 18:09:31 2025 IST

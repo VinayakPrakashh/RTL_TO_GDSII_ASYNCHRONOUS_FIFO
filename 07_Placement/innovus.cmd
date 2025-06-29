@@ -1,7 +1,7 @@
 #######################################################
 #                                                     
 #  Innovus Command Logging File                     
-#  Created on Thu Feb 27 20:17:33 2025                
+#  Created on Tue Mar  4 18:10:01 2025                
 #                                                     
 #######################################################
 
@@ -19,7 +19,7 @@ win
 encMessage warning 0
 encMessage debug 0
 is_common_ui_mode
-restoreDesign /run/media/user1/c2s/S5_training_batch2/Vinayak3/06_Powerplanning/Powerplanning/fifo_top_pplanned.enc.dat fifo_top
+restoreDesign /run/media/user1/c2s/S5_training_batch2/VINAYAK/06_Powerplaning/PowerPlanning/fifo_top_ppln.enc.dat fifo_top
 setDrawView fplan
 encMessage warning 1
 encMessage debug 0
@@ -38,4 +38,4 @@ redirect -quiet {set honorDomain [getAnalysisMode -honorClockDomains]} > /dev/nu
 timeDesign -preCTS -pathReports -drvReports -slackReports -numPaths 1000 -prefix fifo_top_preCTS -outDir timingReports
 setOptMode -fixCap true -fixTran true -fixFanoutLoad false
 optDesign -preCTS
-saveDesign Placement/fifo_top_placed.enc
+saveDesign Placement/fifo_top.enc

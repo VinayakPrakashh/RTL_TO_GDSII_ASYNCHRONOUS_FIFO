@@ -1,4 +1,4 @@
-`timescale 1ns/10ps
+`timescale 1ns/1ps
 module fifo_tb()                                                   ;
 parameter DATA_SIZE   = 8                                           ;
 parameter ADDR_SIZE   = 4                                           ;

@@ -1,0 +1,40 @@
+#######################################################
+#                                                     
+#  Innovus Command Logging File                     
+#  Created on Wed Mar  5 11:53:27 2025                
+#                                                     
+#######################################################
+
+#@(#)CDS: Innovus v21.18-s099_1 (64bit) 07/18/2023 13:03 (Linux 3.10.0-693.el7.x86_64)
+#@(#)CDS: NanoRoute 21.18-s099_1 NR230707-1955/21_18-UB (database version 18.20.605) {superthreading v2.17}
+#@(#)CDS: AAE 21.18-s017 (64bit) 07/18/2023 (Linux 3.10.0-693.el7.x86_64)
+#@(#)CDS: CTE 21.18-s022_1 () Jul 11 2023 23:10:24 ( )
+#@(#)CDS: SYNTECH 21.18-s010_1 () Jul  5 2023 06:32:03 ( )
+#@(#)CDS: CPE v21.18-s053
+#@(#)CDS: IQuantus/TQuantus 21.1.1-s966 (64bit) Wed Mar 8 10:22:20 PST 2023 (Linux 3.10.0-693.el7.x86_64)
+
+set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+suppressMessage ENCEXT-2799
+win
+encMessage warning 0
+encMessage debug 0
+is_common_ui_mode
+restoreDesign /run/media/user1/c2s/S5_training_batch2/VINAYAK/09_Routing/fifo_top_filler_new.enc.dat fifo_top
+setDrawView fplan
+encMessage warning 1
+encMessage debug 0
+fit
+zoomBox -829.32600 217.26900 2292.80900 1758.95800
+zoomBox -294.00300 667.64500 1091.30700 1351.70200
+zoomBox -459.86500 526.73600 1457.52100 1473.52800
+zoomBox -1195.96400 -114.86300 3125.34300 2018.96900
+zoomBox -499.07300 301.43300 2154.75100 1611.87300
+zoomBox 452.27900 869.73200 829.76500 1056.13200
+zoomBox 559.48100 933.81900 680.49500 993.57500
+zoomBox 587.84500 951.22900 641.54200 977.74400
+zoomBox 567.12400 938.51100 669.99300 989.30700
+zoomBox 451.39100 867.48100 828.91100 1053.89800
+zoomBox -340.15200 381.67400 1915.81800 1495.65600
+zoomBox -1210.62000 -152.57400 3111.10900 1981.46600
+fit
+setDrawView place

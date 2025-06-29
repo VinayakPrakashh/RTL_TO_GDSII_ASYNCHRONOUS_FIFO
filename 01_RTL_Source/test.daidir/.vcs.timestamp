@@ -33,14 +33,18 @@
 test
 fifo.v
 fifo_tb.v
-72
+104
 which_declare=declare -f
+dig_90nm=/run/media/user1/c2s/cadence/install/FOUNDRY/digital/90nm
+dig_45nm=/run/media/user1/c2s/cadence/install/FOUNDRY/digital/45nm
+dig_180nm=/run/media/user1/c2s/cadence/install/FOUNDRY/digital/180nm
 XILINX_VIVADO=/home/user1/Xilinx/Vivado/2023.2
 XILINX_VITIS=/home/user1/Xilinx/Vitis/2023.2
 XILINX_HLS=/home/user1/Xilinx/Vitis_HLS/2023.2
-XDG_SESSION_ID=12
+XDG_SESSION_ID=110
 XDG_RUNTIME_DIR=/run/user/1000
 XDG_DATA_DIRS=/home/user1/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share:/usr/share:/var/lib/snapd/desktop
+XCELIUM=/run/media/user1/c2s/cadence/install/XCELIUM2209
 VMR_MODE_FLAG=64
 VERDI_SUPP=/run/media/user1/c2s/synosys_software/verdi_supp/U-2023.03-SP2-3
 VERDI=/run/media/user1/c2s/synosys_software/verdi/U-2023.03-SP2-3
@@ -59,12 +63,16 @@ TOOL_HOME=/home/user1/synopsys/vcs/T-2022.06-SP2-5/linux64
 TCAD=/run/media/user1/c2s/synosys_software/Tcad/sentaurus/S_2021.06
 S_COLORS=auto
 SYN=/home/user1/synopsys/syn/T-2022.03-SP5-4
+STDCELL=/run/media/user1/c2s/cadence/install/FOUNDRY/stdcell
 STDB=/run/media/user1/6a3ea6d8-5027-40f5-b16a-7206cf04b9b9/adersh
 STARC=/run/media/user1/c2s/synosys_software/starrc/U-2022.12-SP5-2
-SSH_TTY=/dev/pts/1
-SSH_CONNECTION=192.168.100.36 52672 192.168.100.24 22
-SSH_CLIENT=192.168.100.36 52672 22
+SSVHOME=/run/media/user1/c2s/cadence/install/SSV172
+SSV211=/run/media/user1/c2s/cadence/install/SSV211
+SSH_TTY=/dev/pts/4
+SSH_CONNECTION=192.168.100.38 50501 192.168.100.24 22
+SSH_CLIENT=192.168.100.38 50501 22
 SSH_ASKPASS=/usr/libexec/openssh/gnome-ssh-askpass
+SPBHOME=/run/media/user1/c2s/cadence/install/SPB172
 SNPS_VCS_CLANG_PATH=/home/user1/synopsys/vcs/T-2022.06-SP2-5/linux64/clang
 SNPS_INTERNAL_VCS_LINUX_OS=linux
 SELINUX_USE_CURRENT_RANGE=
@@ -72,51 +80,75 @@ SELINUX_ROLE_REQUESTED=
 SELINUX_LEVEL_REQUESTED=
 SCRNAME=vcs
 SCRIPT_NAME=vcs
-REMOTEHOST=192.168.100.36
-QRC_ENABLE_QRCRACTION=1
+REMOTEHOST=192.168.100.38
+RCHOME=/run/media/user1/c2s/cadence/install/RC142
+QRC_HOME=/run/media/user1/c2s/cadence/install/EXT181
+QRC_ENABLE_QRCRACTION=t
+PVSHOME=/run/media/user1/c2s/cadence/install/PVS161
 PRIME=/home/user1/synopsys/prime/T-2022.03-SP5-2
 OVA_UUM=0
 OSTYPE=linux
+MODUSHOME=/run/media/user1/c2s/cadence/install/MODUS221
 MODULES_USE_COMPAT_VERSION=0
 MODULES_RUN_QUARANTINE=LD_LIBRARY_PATH LD_PRELOAD
 MODULES_CMD=/usr/share/Modules/libexec/modulecmd.tcl
 MODULESHOME=/usr/share/Modules
 MODULEPATH_modshare=/usr/share/Modules/modulefiles:2:/etc/modulefiles:2:/usr/share/modulefiles:2
-MODULEPATH=/etc/scl/modulefiles:/etc/scl/modulefiles:/usr/share/Modules/modulefiles:/etc/modulefiles:/usr/share/modulefiles
+MODULEPATH=/etc/scl/modulefiles:/etc/scl/modulefiles:/etc/scl/modulefiles:/etc/scl/modulefiles:/usr/share/Modules/modulefiles:/etc/modulefiles:/usr/share/modulefiles
+MMSIMHOME=/run/media/user1/c2s/cadence/install/SPECTRE
 LOADEDMODULES=
+LIBERATEHOME=/run/media/user1/c2s/cadence/install/LIBERATE171
 LESSOPEN=||/usr/bin/lesspipe.sh %s
+LECHOME=/run/media/user1/c2s/cadence/install/CONFRML212
 LC_ALL=C
+JOULES=/run/media/user1/c2s/cadencenew
+JASPER=/run/media/user1/c2s/cadence/install/JASPER
+IUSHOME=/run/media/user1/c2s/cadence/install/INCISIVE152
+INNOVUSHOME=/run/media/user1/c2s/cadence/install/INNOVUS
 ICC2=/home/user1/synopsys/icc2/T-2022.03-SP2-1
 HSPICE=/run/media/user1/c2s/synosys_software/hspice/U-2023.03-SP2-2/hspice
 HOSTTYPE=x86_64-linux
 HISTCONTROL=ignoredups
 GROUP=user1
+GENUSHOME=/run/media/user1/c2s/cadence/install/GENUS211
 GDK_BACKEND=x11
 FUSION=/home/user1/synopsys/fusioncompiler/T-2022.03-SP2-1
+FOUNDRY=/run/media/user1/c2s/cadence/install/FOUNDRY
 FORMALITY=/run/media/user1/c2s/synosys_software/Formality/fm/V-2023.12-SP3
 FLEXLM_DIAGNOSTICS=3
-DBUS_SESSION_BUS_ADDRESS=unix:abstract=/tmp/dbus-MUu32k7hzp,guid=f39b6d25857047988089a9b467b6b2f6
+EXT_REL=/run/media/user1/c2s/cadence/install/EXT181
+ETSHOME=/run/media/user1/c2s/cadence/install/ETS131
+ETHOME=/run/media/user1/c2s/cadence/install/ET151
+ENCOUNTERHOME=/run/media/user1/c2s/cadence/install/EDI142
+DIGITAL=/run/media/user1/c2s/cadence/install/FOUNDRY/digital
+DBUS_SESSION_BUS_ADDRESS=unix:abstract=/tmp/dbus-snlieHk16J,guid=00eb5f19afb07bfa7319d53f67c6b732
 CUSTOM=/home/user1/synopsys/customcompiler/U-2023.03-5
 CDS_Netlisting_Mode=Analog
+CDS_LIC_FILE=5280@14.139.1.126
+CDS_INST_DIR=/run/media/user1/c2s/cadence/install/IC6181
 CDS_AUTO_64BIT=ALL
 CDS_AHDLCMI_ENABLE=YES
+CDSHOME=/run/media/user1/c2s/cadence/install/IC6181
 BASH_FUNC_which%%=() {  ( alias;_ eval ${which_declare} ) | /usr/bin/which --tty-only --read-alias --read-functions --show-tilde --show-dot $@_}
 BASH_FUNC_switchml%%=() {  typeset swfound=1;_ if [ "${MODULES_USE_COMPAT_VERSION:-0}" = '1' ]; then_ typeset swname='main';_ if [ -e /usr/share/Modules/libexec/modulecmd.tcl ]; then_ typeset swfound=0;_ unset MODULES_USE_COMPAT_VERSION;_ fi;_ else_ typeset swname='compatibility';_ if [ -e /usr/share/Modules/libexec/modulecmd-compat ]; then_ typeset swfound=0;_ MODULES_USE_COMPAT_VERSION=1;_ export MODULES_USE_COMPAT_VERSION;_ fi;_ fi;_ if [ $swfound -eq 0 ]; then_ echo "Switching to Modules $swname version";_ source /usr/share/Modules/init/bash;_ else_ echo "Cannot switch to Modules $swname version, command not found";_ return 1;_ fi_}
 BASH_FUNC_scl%%=() {  if [ "$1" = "load" -o "$1" = "unload" ]; then_ eval "module $@";_ else_ /usr/bin/scl "$@";_ fi_}
 BASH_FUNC_module%%=() {  _module_raw "$@" 2>&1_}
 BASH_FUNC_ml%%=() {  module ml "$@"_}
 BASH_FUNC__module_raw%%=() {  unset _mlshdbg;_ if [ "${MODULES_SILENT_SHELL_DEBUG:-0}" = '1' ]; then_ case "$-" in _ *v*x*)_ set +vx;_ _mlshdbg='vx'_ ;;_ *v*)_ set +v;_ _mlshdbg='v'_ ;;_ *x*)_ set +x;_ _mlshdbg='x'_ ;;_ *)_ _mlshdbg=''_ ;;_ esac;_ fi;_ unset _mlre _mlIFS;_ if [ -n "${IFS+x}" ]; then_ _mlIFS=$IFS;_ fi;_ IFS=' ';_ for _mlv in ${MODULES_RUN_QUARANTINE:-};_ do_ if [ "${_mlv}" = "${_mlv##*[!A-Za-z0-9_]}" -a "${_mlv}" = "${_mlv#[0-9]}" ]; then_ if [ -n "`eval 'echo ${'$_mlv'+x}'`" ]; then_ _mlre="${_mlre:-}${_mlv}_modquar='`eval 'echo ${'$_mlv'}'`' ";_ fi;_ _mlrv="MODULES_RUNENV_${_mlv}";_ _mlre="${_mlre:-}${_mlv}='`eval 'echo ${'$_mlrv':-}'`' ";_ fi;_ done;_ if [ -n "${_mlre:-}" ]; then_ eval `eval ${_mlre} /usr/bin/tclsh /usr/share/Modules/libexec/modulecmd.tcl bash '"$@"'`;_ else_ eval `/usr/bin/tclsh /usr/share/Modules/libexec/modulecmd.tcl bash "$@"`;_ fi;_ _mlstatus=$?;_ if [ -n "${_mlIFS+x}" ]; then_ IFS=$_mlIFS;_ else_ unset IFS;_ fi;_ unset _mlre _mlv _mlrv _mlIFS;_ if [ -n "${_mlshdbg:-}" ]; then_ set -$_mlshdbg;_ fi;_ unset _mlshdbg;_ return $_mlstatus_}
+ASSURAHOME=/run/media/user1/c2s/cadence/install/ASSURA
+ANALOG=/run/media/user1/c2s/cadence/install/FOUNDRY/analog
+AMSHOME=/run/media/user1/c2s/cadence/install/INCISIVE152
 0
 0
 4
-1740026373 fifo.v
+1741083862 fifo.v
 1740026416 fifo_tb.v
-1740026373 fifo.v
+1741083862 fifo.v
 1689995185 /home/user1/synopsys/vcs/T-2022.06-SP2-5/linux64/lib/vcsdp.tab
 4
 1689996544 /home/user1/synopsys/vcs/T-2022.06-SP2-5/linux64/lib/libvirsim.so
 1689995954 /home/user1/synopsys/vcs/T-2022.06-SP2-5/linux64/lib/liberrorinf.so
 1689995901 /home/user1/synopsys/vcs/T-2022.06-SP2-5/linux64/lib/libsnpsmalloc.so
 1689995947 /home/user1/synopsys/vcs/T-2022.06-SP2-5/linux64/lib/libvfs.so
-1740026703 test.daidir
+1741083966 test.daidir
 -1 partitionlib

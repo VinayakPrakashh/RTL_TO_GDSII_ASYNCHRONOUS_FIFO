@@ -1,7 +1,7 @@
 (DELAYFILE
   (SDFVERSION  "OVI 2.1")
   (DESIGN      "fifo_top")
-  (DATE        "Thu Feb 20 10:59:09 IST 2025")
+  (DATE        "Tue Mar 04 16:10:17 IST 2025")
   (VENDOR      "Cadence, Inc.")
   (PROGRAM     "Genus(TM) Synthesis Solution")
   (VERSION     "21.18-s082_1")
@@ -6436,48 +6436,6 @@
   )
   (CELL
      (CELLTYPE "dfcrq1")
-     (INSTANCE rd_sync.rst_sync_reg)
-     (DELAY
-        (ABSOLUTE
-          (PORT CDN (::0.0))
-          (PORT CP (::0.0))
-          (PORT D (::0.0))
-          (IOPATH CDN Q () (::84))
-          (IOPATH CP Q (::398) (::471))
-        )
-     )
-     (TIMINGCHECK
-        (HOLD (posedge CDN) (posedge CP) (::288))
-        (RECOVERY (posedge CDN) (posedge CP) (::-264))
-        (SETUPHOLD (negedge D) (posedge CP) (::-12) (::79))
-        (SETUPHOLD (posedge D) (posedge CP) (::96) (::-72))
-        (WIDTH (negedge CDN) (::202.6))
-        (WIDTH (posedge CP) (::237.7))
-        (WIDTH (negedge CP) (::360.8))
-     )
-  )
-  (CELL
-     (CELLTYPE "dfcrq1")
-     (INSTANCE rd_sync.rst_sync_reg_reg)
-     (DELAY
-        (ABSOLUTE
-          (PORT CDN (::0.0))
-          (PORT CP (::0.0))
-          (PORT D (::0.0))
-          (IOPATH CDN Q () (::100))
-          (IOPATH CP Q (::415) (::490))
-        )
-     )
-     (TIMINGCHECK
-        (HOLD (posedge CDN) (posedge CP) (::288))
-        (RECOVERY (posedge CDN) (posedge CP) (::-264))
-        (WIDTH (negedge CDN) (::202.6))
-        (WIDTH (posedge CP) (::237.7))
-        (WIDTH (negedge CP) (::360.8))
-     )
-  )
-  (CELL
-     (CELLTYPE "dfcrq1")
      (INSTANCE wr_addr_sync.dff_1.rd_data_reg\[4\])
      (DELAY
         (ABSOLUTE
@@ -6691,48 +6649,6 @@
         (RECOVERY (posedge CDN) (posedge CP) (::-233))
         (SETUPHOLD (negedge D) (posedge CP) (::4) (::66))
         (SETUPHOLD (posedge D) (posedge CP) (::49) (::-32))
-        (WIDTH (negedge CDN) (::202.6))
-        (WIDTH (posedge CP) (::237.7))
-        (WIDTH (negedge CP) (::360.8))
-     )
-  )
-  (CELL
-     (CELLTYPE "dfcrq1")
-     (INSTANCE wr_sync.rst_sync_reg)
-     (DELAY
-        (ABSOLUTE
-          (PORT CDN (::0.0))
-          (PORT CP (::0.0))
-          (PORT D (::0.0))
-          (IOPATH CDN Q () (::84))
-          (IOPATH CP Q (::356) (::433))
-        )
-     )
-     (TIMINGCHECK
-        (HOLD (posedge CDN) (posedge CP) (::258))
-        (RECOVERY (posedge CDN) (posedge CP) (::-233))
-        (SETUPHOLD (negedge D) (posedge CP) (::4) (::66))
-        (SETUPHOLD (posedge D) (posedge CP) (::49) (::-32))
-        (WIDTH (negedge CDN) (::202.6))
-        (WIDTH (posedge CP) (::237.7))
-        (WIDTH (negedge CP) (::360.8))
-     )
-  )
-  (CELL
-     (CELLTYPE "dfcrq1")
-     (INSTANCE wr_sync.rst_sync_reg_reg)
-     (DELAY
-        (ABSOLUTE
-          (PORT CDN (::0.0))
-          (PORT CP (::0.0))
-          (PORT D (::0.0))
-          (IOPATH CDN Q () (::100))
-          (IOPATH CP Q (::374) (::449))
-        )
-     )
-     (TIMINGCHECK
-        (HOLD (posedge CDN) (posedge CP) (::258))
-        (RECOVERY (posedge CDN) (posedge CP) (::-233))
         (WIDTH (negedge CDN) (::202.6))
         (WIDTH (posedge CP) (::237.7))
         (WIDTH (negedge CP) (::360.8))

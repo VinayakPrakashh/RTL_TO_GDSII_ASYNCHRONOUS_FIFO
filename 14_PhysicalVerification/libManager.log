@@ -1,0 +1,50 @@
+\o Program:		@(#)$CDS: libManager version 6.1.8 - CAT37 01/17/2024 18:07 (csvcm36c-7) $
+\o Sub version:		sub-version  s353 
+\o Arguments:		-unmapped -mpssession virtuoso545820 -mpshost c2slab.cet.ac.in 
+\o Working Directory:	c2slab.cet.ac.in:/run/media/user1/c2s/S5_training_batch2/VINAYAK/14_PhysicalVerification
+\o 64-bit offsets
+\o Qt version: 		5.9.1
+\a _lmSetFilter( 'cell (list nil 'FilterWith "All Of The Words"))
+\o MPS virtuoso types registered: 65
+\o changeWorkingDir("/run/media/user1/c2s/S5_training_batch2/VINAYAK/14_PhysicalVerification") unnecessary.
+\o ddSetForcedLib("") unnecessary.
+\o Log file is "/run/media/user1/c2s/S5_training_batch2/VINAYAK/14_PhysicalVerification/libManager.log".
+\o Opening libManager window.
+\a nrSetWindowVisibility(cdsLibManager "show")
+\o MPS service: map window
+\o Library Manager customization server connected.
+\a nrResizeWindow(cdsLibManager list(0 27 1221 617))
+\a nrSetCurrentWindow(cdsLibManager)
+\w Warning: The directory: '/home/user1/adderDAM' does not exist
+\w 	but was defined in libFile '/home/user1/cds.lib' for Lib 'adderDAM'.
+\w Warning: The directory: '/home/install/FOUNDRY/rfLib_new' does not exist
+\w 	but was defined in libFile '/home/user1/cds.lib' for Lib 'rfLib_new'.
+\w Warning: The directory: '/run/media/user1/c2s/cadence/install/INCISIVE152/tools/affirma_ams/etc/connect_lib/connectLib' does not exist
+\w 	but was defined in libFile '/home/user1/cds.lib' for Lib 'connectLib'.
+\a nrResizeWindow(cdsLibManager list(8 31 1221 617))
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->libListBox->value = "fifo"
+\a cdsLibManager->libLineEdit->value = "fifo"
+\a cdsLibManager->cellListBox->value = "fifo_top"
+\a cdsLibManager->cellLineEdit->value = "fifo_top"
+\a cdsLibManager->viewListBox->value = "layout"
+\a cdsLibManager->viewLineEdit->value = "layout"
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = "layout"
+\a cdsLibManager->viewLineEdit->value = "layout"
+\o MPS request: edit design
+\a nrListItemAction(cdsLibManager->gdmXTView 0 0)
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetWindowVisibility(cdsLibManager "hide")
+\a nrResizeWindow(cdsLibManager list(0 0 1221 617))
+\a nrSetWindowVisibility(cdsLibManager "show")
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrResizeWindow(cdsLibManager list(8 31 1221 617))
+\o MPS service: shutdown
+\o libManager is exiting.
+\a exit(0)

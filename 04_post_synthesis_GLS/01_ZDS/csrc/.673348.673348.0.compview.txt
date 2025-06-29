@@ -1,0 +1,5 @@
+{"vcs1":{"timestamp_begin":1741086167.517861969, "rt":1.24, "ut":0.06, "st":0.02}}
+{"SNPS_VCS_INTERNAL_ROOT_START_TIME": 1741086167.120406332}
+{"VCS_COMP_START_TIME": 1741086167.120406332}
+{"VCS_COMP_END_TIME": 1741086168.790672901}
+{"VCS_USER_OPTIONS": "-v fifo_top_incremental.v fifo_tb_pad.v pc3c01.v pc3d01.v pc3o05.v tsl18fs120_scl.v +notimingcheck -o test -debug_all -Mupdate -full64"}

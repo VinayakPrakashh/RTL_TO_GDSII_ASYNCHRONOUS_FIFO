@@ -1,8 +1,8 @@
-219
+215
 cdc_synchronizer
 in_data_n
 All
-cdc_synchronizer_39
+cdc_synchronizer_35
 in_data_n
 All
 fifo_empty
@@ -618,9 +618,6 @@ fifo_top
 rd_rst
 Scal
 fifo_top
-rd_rst_sync
-Scal
-fifo_top
 read_clk
 Scal
 fifo_top
@@ -645,14 +642,5 @@ fifo_top
 wr_rst
 Scal
 fifo_top
-wr_rst_sync
-Scal
-fifo_top
 write_clk
-Scal
-reset_sync
-rst_sync_reg_8
-Scal
-reset_sync_43
-rst_sync_reg_8
 Scal

@@ -12,8 +12,8 @@ set _OUTPUTS_PATH output_files
 set _REPORTS_PATH report_files
 ##set ET_WORKDIR <ET work directory>
 set_db / .init_lib_search_path { /run/media/user1/c2s/cadence/install/SCL_PDK/scl180/stdcell/fs120/4M1IL/liberty/lib_flow_ss /run/media/user1/c2s/cadence/install/SCL_PDK/scl180/stdcell/fs120/4M1IL/liberty/lib_flow_ff}
-set_db / .script_search_path { /run/media/user1/c2s/S5_training_batch2/Vinayak3/02_synthesis/Scripts} 
-set_db / .init_hdl_search_path { /run/media/user1/c2s/S5_training_batch2/Vinayak3/02_synthesis/RTL_source}
+set_db / .script_search_path { /run/media/user1/c2s/S5_training_batch2/VINAYAK/02_synthesis/Scripts} 
+set_db / .init_hdl_search_path { /run/media/user1/c2s/S5_training_batch2/VINAYAK/02_synthesis/RTL_source}
 set_db auto_ungroup none
 ##Uncomment and specify machine names to enable super-threading.
 ##set_db / .super_thread_servers {<machine names>} 
