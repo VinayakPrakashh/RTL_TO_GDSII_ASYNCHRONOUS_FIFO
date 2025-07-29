@@ -50,7 +50,7 @@ create_clock   -name   rd_vir_clk_i   -period   30
 
 ##  Write clock source latency
 set_clock_latency   -source   -max   1.25   -late    [get_clocks  write_clk]
-set_clock_latency   -source   -min   0.75   -late    [get_clocks  write_clk]
+set_clock_latency   -source   -min   0.75   -	    [get_clocks  write_clk]
 set_clock_latency   -source   -max   1.0    -early   [get_clocks  write_clk]
 set_clock_latency   -source   -min   1.25   -early   [get_clocks  write_clk]
 
