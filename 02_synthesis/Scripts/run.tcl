@@ -32,7 +32,7 @@ set_db / .information_level 7
 set_db / .library { /run/media/user1/c2s/cadence/install/SCL_PDK/scl180/stdcell/fs120/4M1IL/liberty/lib_flow_ss/tsl18fs120_scl_ss.lib /run/media/user1/c2s/cadence/install/SCL_PDK/scl180/scl180/iopad/cio150/4M1L/liberty/tsl18cio150_max.lib /run/media/user1/c2s/cadence/install/SCL_PDK/scl180/stdcell/fs120/4M1IL/liberty/lib_flow_ff/tsl18fs120_scl_ff.lib /run/media/user1/c2s/cadence/install/SCL_PDK/scl180/scl180/iopad/cio150/4M1L/liberty/tsl18cio150_min.lib}
 #set_db / .lef_library {../lef/tsl18fs120_scl.lef}
 read_libs -max_libs { /run/media/user1/c2s/cadence/install/SCL_PDK/scl180/stdcell/fs120/4M1IL/liberty/lib_flow_ss/tsl18fs120_scl_ss.lib /run/media/user1/c2s/cadence/install/SCL_PDK/scl180/scl180/iopad/cio150/4M1L/liberty/tsl18cio150_min.lib} \
--min_libs { /run/media/user1/c2s/cadence/install/SCL_PDK/scl180/stdcell/fs120/4M1IL/liberty/lib_flow_ff/tsl18fs120_scl_ff.lib /run/media/user1/c2s/cadence/install/SCL_PDK/scl180/scl180/iopad/cio150/4M1L/liberty/tsl18cio150_max.lib}
+read_libs -min_libs { /run/media/user1/c2s/cadence/install/SCL_PDK/scl180/stdcell/fs120/4M1IL/liberty/lib_flow_ff/tsl18fs120_scl_ff.lib /run/media/user1/c2s/cadence/install/SCL_PDK/scl180/scl180/iopad/cio150/4M1L/liberty/tsl18cio150_max.lib}
 #lib_cell_list gcnfnn1 gcnfnn2 gcnfnn4 gcnfnn7 gcnfnna gcnrnn1 gcnrnn2 gcnrnn4 gcnrnn7 gcnrnna mx08* 
 #set_dont_use  lib_cell_lists [ gcnfnn1 gcnfnn2 gcnfnn4 gcnfnn7 gcnfnna gcnrnn1 gcnrnn2 gcnrnn4 gcnrnn7 gcnrnna mx08*]  
  

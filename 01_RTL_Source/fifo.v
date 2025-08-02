@@ -53,7 +53,7 @@ always @(posedge wr_clk or negedge wr_rst) begin
     end
 end
 
-assign wr_addr_bin = wr_addr_bin_r[3:0]; // write pointer
+assign wr_addr_bin = wr_addr_bin_r[3:0]; // write pointr
 
 assign wr_addr_binary_next = {wr_addr_bin_r+(!full_r & wr_en)};
 
