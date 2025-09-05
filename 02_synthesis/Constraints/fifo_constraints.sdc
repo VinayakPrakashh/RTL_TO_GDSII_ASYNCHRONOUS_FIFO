@@ -31,10 +31,10 @@ set MAX_PORT 2.5;
 
 ####### CLOCK CONSTRAINTS #########
 
-create_clock -name "$WRITE_CLOCK_NAME"			\
-	     -period "$WRITE_CLOCK_PERIOD" 		\
-	     -waveform "0 [expr $WRITE_CLOCK_PERIOD/2]"  \
-	      [get_ports "wr_clk_pad"]
+	create_clock -name "$WRITE_CLOCK_NAME"			\
+			-period "$WRITE_CLOCK_PERIOD" 		\
+			-waveform "0 [expr $WRITE_CLOCK_PERIOD/2]"  \
+			[get_ports "wr_clk_pad"]
 
 
 create_clock -name "$READ_CLOCK_NAME"			\
@@ -101,7 +101,6 @@ set_clock_uncertainty -hold  $READ_SKEW_hold   [get_clocks read_clk]
 
 
 # Write input port delay
-
 set_input_delay  -add_delay -clock wr_vir_clk_i -max 7.75 [get_ports wr_en_pad] 
 set_input_delay  -add_delay -clock wr_vir_clk_i -min 2.25 [get_ports wr_en_pad] 
 
